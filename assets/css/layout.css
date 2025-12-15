@@ -236,6 +236,7 @@
     padding-bottom:120px;
 
     background-color: #dbd3ec;
+    overflow: hidden;
 
 }
 .services-section-accounting
@@ -244,6 +245,7 @@
     padding-bottom:120px;
 
     background-color: #01000e;
+    overflow: hidden;
 
 }
 .services-section-accounting-content-outer-wrapper
@@ -289,6 +291,8 @@
 {
     background-color: #01000e;
     background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
+
+    background: linear-gradient(270deg, #330d7f 0%, #070331 92.3%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,6 +302,8 @@
 {
        background-color: #01000e;
         background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
+            background: linear-gradient(270deg, #330d7f 0%, #070331 92.3%);
+
 
        display: flex;
     align-items: center;
@@ -477,11 +483,10 @@
 
 .section-information-general
 {
-    background-color: #482D9A;
 
     padding-top: 120px;
     padding-bottom: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 0px;
     text-align: center;
 }
 .section-general-information-title
@@ -503,7 +508,10 @@
 
 .section-other-services
 {
-   background-color: #fff;
+   background-color: #080716;
+
+   padding-bottom: 120px;
+   padding-top: 120px;
 }
 
 .section-other-services-top
@@ -562,6 +570,7 @@ background-color: #fff;
 {
 
 background-color: #17162b;
+background-color: #080716;
 
 
 }
@@ -570,6 +579,7 @@ background-color: #17162b;
 {
 /* background-color: #0C0840; */
 background-color: #17162b;
+background-color: #080716;
 
 
 }
@@ -629,6 +639,36 @@ background-color: #311291;
     line-height: 24px;
     color: #1B1616;
 }
+
+
+
+.other-services-extra-wrapper
+{
+    background-color: #2A48BD;
+    padding: 24px;
+    margin-top: auto;
+    position: relative;
+}
+
+.other-services-paragraph
+{
+        margin-top: 24px;
+
+    color: #ffff;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: italic;
+}
+
+.other-services-subsection-divider
+{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
 .other-services-list-item-with-underline
 {
     padding-top:24px;
@@ -880,23 +920,8 @@ background-color: #311291;
     
 }
 
-}
-.services-section-tax
-{
-    padding-top:48px;
-    padding-bottom:120px;
 
-    background-color: #e6e6e6;
 
-}
-.services-section-accounting
-{
-    padding-top:120px;
-    padding-bottom:48px;
-
-    background-color: #01000e;
-
-}
 
 
 .services-section-accounting-content
@@ -1016,6 +1041,27 @@ width: 100%;
     justify-content: flex-start;
 
 
+}
+
+.services-section-tax
+{
+    padding-top:48px;
+    padding-bottom:120px;
+
+
+
+}
+.services-section-accounting
+{
+    padding-bottom:48px;
+
+
+}
+
+.section-other-services-row-bottom
+
+{
+  flex-direction: column-reverse !important;
 }
 
 

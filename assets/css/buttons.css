@@ -111,3 +111,35 @@
 {
     /* transform: scaleX(-1); */
 }
+
+
+.other-services-know-more-button
+
+{
+
+    position: relative;
+    min-width: 240px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    gap:12px;
+    align-items: center;
+
+   
+    
+    font-size: 20px;
+    line-height: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.other-services-know-more-button img
+ 
+{
+ width: 32px;
+   height: 32px;
+}

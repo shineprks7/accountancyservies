@@ -79,10 +79,14 @@
 .accent-bg
 {
     background-color: #F0BD17;
+        background-color: #bd9f4b;
+
 }
 .accent-font
 {
     color:#F0BD17;
+        color:#bd9f4b;
+
 }
 
 .grey-border
