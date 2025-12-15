@@ -223,6 +223,18 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: absolute;
 }
 
+.service-section-list-row-middle-decoration
+{
+  width: 12px;
+  background-color: #3B26C6;
+
+  height: 120px;
+
+  border-radius: 6px;
+  position: relative;
+
+}
+
 
 
 }
