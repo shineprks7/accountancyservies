@@ -288,6 +288,7 @@
 .services-section-image-card-tax
 {
     background-color: #01000e;
+    background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -296,6 +297,8 @@
 .services-section-image-card-itr
 {
        background-color: #01000e;
+        background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
+
        display: flex;
     align-items: center;
     justify-content: center;
