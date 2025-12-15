@@ -879,6 +879,36 @@ background-color: #311291;
     width: 40%;
     
 }
+.services-section-tax
+{
+    padding-top:120px;
+    padding-bottom:120px;
+
+.services-section-tax
+{
+    padding-top:48px;
+    padding-bottom:120px;
+
+    background-color: #e6e6e6;
+
+}
+.services-section-accounting
+{
+    padding-top:120px;
+    padding-bottom:48px;
+
+    background-color: #01000e;
+
+}
+}
+.services-section-accounting
+{
+    padding-top:120px;
+    padding-bottom:120px;
+
+    background-color: #01000e;
+
+}
 
 .services-section-accounting-content
 {
