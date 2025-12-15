@@ -495,9 +495,9 @@
 }
 .general-info-call-button
 {
-    background-color: #fff;
+    /* background-color: #fff;
     border:2px solid #482D9A;
-    outline: 2px solid #fff;
+    outline: 2px solid #fff; */
     display: inline-block;
     padding:12px 24px;
 
@@ -521,6 +521,7 @@ background-color: #01000e;
   padding-bottom: 120px;
 
   color:#fff;
+  border:1px solid #fff;
 }
 .section-other-services-top li
 {
