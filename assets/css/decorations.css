@@ -152,6 +152,27 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 @media (max-width:720px)  { 
 
 
+  .hero-section-left-part::before
+{
+
+          top: 0px;
+        left: 100%;
+        width: calc(100% - 36px);
+        height: 18px;
+        transform: translate(-100%, 0);
+ 
+}
+.hero-section-left-part::after
+{
+
+  
+  left: 0px;
+  width: 48px;
+  height: 18px;
+ 
+
+}
+
   .about-section-top::after
 {
   content: "";
