@@ -819,7 +819,7 @@ background-color: #311291;
  .about-section-top-content
 {
 
-            width: calc(100% - 40px);
+            width: calc(100% - 12px);
 
 }
 .about-section-bottom-row .partner-box
@@ -832,8 +832,8 @@ background-color: #311291;
 .about-section-top
 {
     padding-top: 120px;
-    padding-left: 48px;
-        padding-right: 48px;
+    padding-left: 12px;
+        padding-right: 12px;
 
 
         position: relative;
@@ -842,12 +842,18 @@ background-color: #311291;
 
 .about-section-bottom
 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 48px;
-        padding-right: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 12px;
+        padding-right: 12px;
         width: 100%;
         position: relative;
+
+}
+
+.about-section-bottom-row
+{
+    gap:48px;
 
 }
 
@@ -948,6 +954,23 @@ background-color: #311291;
     
 
     width: 100%;
+}
+
+.section-other-services-top
+
+{
+padding-top:0px;
+padding-bottom:0px;
+
+
+}
+.section-other-services-bottom
+
+{
+padding-top: 0px;
+
+padding-bottom:0px;
+
 }
 
 .section-other-services-row

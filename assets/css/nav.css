@@ -21,6 +21,7 @@
     color:#fff;
 
     border-bottom: 1px solid #fff;
+    box-sizing: border-box;
 }
 
 .spacer
@@ -184,7 +185,10 @@
  height: 48px;
  width: auto;
 }
-
+.nav-bar-wrapper
+{
+height: 96px;
+}
        .destop-menu-wrapper
        {
           display: none;
@@ -195,7 +199,7 @@
         padding: 16px;
   box-sizing: border-box;
   position: fixed;
-  top:72px;
+  top:96px;
   left:0px;
   z-index: 1000;
   background-color: #fff;
