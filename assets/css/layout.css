@@ -538,7 +538,6 @@ display: flex;
 
 .section-other-services
 {
-   background-color: #fff;
 
    padding-bottom: 120px;
    padding-top: 120px;
@@ -548,7 +547,7 @@ display: flex;
 
 .section-other-services-top
 {
-background-color: #fff;
+background-color: #bfab77;
   padding-top: 120px;
   padding-bottom: 120px;
 
@@ -575,7 +574,7 @@ background-color: #fff;
 .section-other-services-bottom
 {
     margin-top: 48px;
-background-color: #fff;
+background-color: #eae2b8;
   padding-top: 120px;
   padding-bottom: 120px;
 }
