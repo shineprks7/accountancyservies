@@ -235,7 +235,7 @@
     padding-top:120px;
     padding-bottom:120px;
 
-    background-color: #dbd3ec;
+    background-color: #aa9dc5;
     overflow: hidden;
 
 }
@@ -244,7 +244,7 @@
     padding-top:120px;
     padding-bottom:120px;
 
-    background-color: #01000e;
+    background-color: #78787b;
     overflow: hidden;
 
 }
@@ -292,8 +292,14 @@
     background-color: #01000e;
     background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
 
-    background: linear-gradient(270deg, #330d7f 0%, #070331 92.3%);
-    display: flex;
+            background: linear-gradient(270deg, #311291 0%, #2b1cce 92.3%);
+
+            background: linear-gradient(270deg, #12043f 0%, #07033b 92.3%);
+/* background: linear-gradient(270deg, #2a2a2b 0%, #66667f 92.3%);  */
+        box-shadow:0 0 0 12px #fff;
+
+
+display: flex;
     align-items: center;
     justify-content: center;
 
@@ -302,8 +308,11 @@
 {
        background-color: #01000e;
         background: linear-gradient(270deg, #744bbb 0%, #2b1cce 92.3%);
-            background: linear-gradient(270deg, #330d7f 0%, #070331 92.3%);
+            background: linear-gradient(270deg, #311291 0%, #2b1cce 92.3%);
+                        background: linear-gradient(270deg, #12043f 0%, #07033b 92.3%);
 
+   /* background: linear-gradient(270deg, #2a2a2b 0%, #66667f 92.3%); */
+        box-shadow:0 0 0 12px #fff;
 
        display: flex;
     align-items: center;
@@ -313,10 +322,24 @@
 .services-section-image-card-cashflow
 {
     background-color: #fff;
+        /* background: linear-gradient(270deg, #464547 0%, #88888b 92.3%);
+
+        background: linear-gradient(270deg, #c1bdc5 0%, #bcbcc1 92.3%); */
+
+        box-shadow:0 0 0 12px #fff;
+
+
+
 }
 .services-section-image-card-accounting
 {
     background-color: #311291;
+        /* background: linear-gradient(270deg, #464547 0%, #88888b 92.3%); */
+
+                                background: linear-gradient(270deg, #12043f 0%, #07033b 92.3%);
+
+        box-shadow:0 0 0 12px #fff;
+
 }
 
 
@@ -508,28 +531,43 @@
 
 .section-other-services
 {
-   background-color: #333243;
+   background-color: #fff;
 
    padding-bottom: 120px;
    padding-top: 120px;
+   overflow: hidden;
+     
 }
 
 .section-other-services-top
 {
-background-color: #333243;
+background-color: #fff;
   padding-top: 120px;
   padding-bottom: 120px;
 
-  color:#fff;
-  border:1px solid #fff;
+  border:1px solid #0C0840;
+  position: relative;
+   
+    z-index: 4;
+
+    
+
 }
+
+
+
+
+
+
+
 .section-other-services-top li
 {
-  color:#fff;
+  
 }
 
 .section-other-services-bottom
 {
+    margin-top: 48px;
 background-color: #fff;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -573,6 +611,8 @@ background-color: #fff;
 background-color: #17162b;
 background-color: #080716;
 
+background-color: #0C0840;
+
 
 }
 
@@ -581,6 +621,8 @@ background-color: #080716;
 /* background-color: #0C0840; */
 background-color: #17162b;
 background-color: #080716;
+background-color: #0C0840;
+
 
 
 }
