@@ -269,6 +269,13 @@
  
 }
 
+.services-section-image-row-wrapper
+{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow-x: scroll;
+}
 
 .services-section-image-row
 {
@@ -979,12 +986,15 @@ background-color: #311291;
      padding-right: 48px;
 
 }
-
+.services-section-image-row
+{
+    width: 160%;
+}
 
 
 .services-section-image-card 
 {
-    width: 100%;
+    /* width: 50%; */
 }
 
 
@@ -1105,6 +1115,12 @@ width: 100%;
 
 {
   flex-direction: column-reverse !important;
+}
+
+.other-services-list-content
+{
+    max-height: 0px;
+    overflow: hidden;
 }
 
 
