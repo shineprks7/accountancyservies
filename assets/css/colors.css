@@ -2,6 +2,7 @@
 {
 
     background-color:#0C0840;
+    background-color:#0b0840;
 
 
 }
@@ -42,29 +43,29 @@
 
 .primary-shade-1-bg
 {
-    background-color:#5834C4;
+    background-color:#1c139d;
 
 }
 .primary-shade-1-font
 {
-    color:#5834C4;
+    color:#1c139d;
 
 }
 .primary-shade-2-bg
 {
-   background-color:#2A48BD ;
+   background-color:#2217bf ;
 }
 .primary-shade-2-font
 {
-   color:#2A48BD ;
+   color:#2217bf ;
 }
 .primary-shade-3-bg
 {
-   background-color:#7d8fd8 ;
+   background-color:#281be1 ;
 }
 .primary-shade-3-font
 {
-   color:#7d8fd8 ;
+   color:#281be1 ;
 }
 .light-primary-bg
 {
@@ -79,13 +80,13 @@
 .accent-bg
 {
     background-color: #F0BD17;
-        background-color: #bd9f4b;
+        background-color: #403708;
 
 }
 .accent-font
 {
     color:#F0BD17;
-        color:#bd9f4b;
+        color:#403708;
 
 }
 

@@ -235,7 +235,7 @@
     padding-top:120px;
     padding-bottom:120px;
 
-    background-color: #aa9dc5;
+    background-color: #eae2b8;
     overflow: hidden;
 
 }
@@ -244,7 +244,7 @@
     padding-top:120px;
     padding-bottom:120px;
 
-    background-color: #78787b;
+    background-color: #bfab77;
     overflow: hidden;
 
 }
@@ -376,14 +376,14 @@ display: flex;
 .services-section-list-wrapper.tax
 
 {
-    background-color: #DBD3EC;
+    background-color: #bbb8ea;
 
 }
 
 .services-section-list-wrapper.accounting
 
 {
-    background-color: #01000e;
+    background-color: #bbb8ea;
 
     width: calc(66.66% + 0px);
 
@@ -468,7 +468,7 @@ display: flex;
 {
     flex:0 0 calc(50% - 12px);
 
-    color:#fff;
+    color:#0d0d13;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -483,9 +483,9 @@ display: flex;
 {
     width: 24px;
     height: 24px;
-    background-color: #0d0d13;
+    background-color: #fff;
 
-    border:6px solid  #fff;
+    border:6px solid  #0d0d13;
 
     border-radius: 50%;
     display: inline-block;
@@ -635,13 +635,13 @@ background-color: #0C0840;
 }
 .section-other-services-row-column.payroll-image
 {
-background-color: #e4e2e7;
+background-color: #bbb8ea;
 
 
 }
 .section-other-services-row-column.business-operations-image
 {
-background-color: #311291;
+background-color: #2217bf;
 
 }
 
@@ -681,6 +681,19 @@ background-color: #311291;
 
 }
 
+.other-services-list-title-text
+{
+
+}
+
+.other-services-list-title-icon
+{
+   display: inline-block; 
+   width: 24px;
+   height: 24px;
+   background-color: blue;
+}
+
 .other-services-list-item
 {
     margin-top: 24px;
@@ -694,7 +707,7 @@ background-color: #311291;
 
 .other-services-extra-wrapper
 {
-    background-color: #2A48BD;
+    background-color: #281be1;
     padding: 24px;
     margin-top: auto;
     position: relative;
@@ -1004,7 +1017,6 @@ background-color: #311291;
 .services-section-list-wrapper.accounting
 
 {
-    background-color: #01000e;
 
     width: 100%;
 

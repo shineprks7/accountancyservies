@@ -52,7 +52,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   left: 0px;
   width: 48px;
   height: 36px;
-  background-color: #5834C4;
+  background-color: #2217bf;
   position: absolute;
 }
 .hero-section-left-part::after
@@ -63,7 +63,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   left: 0px;
   width: 48px;
   height: 36px;
-  background-color: #5834C4;
+  background-color: #2217bf;
     position: absolute;
 
 }
@@ -97,7 +97,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .service-section-list-row-middle-decoration
 {
   width: 12px;
-  background-color: #3B26C6;
+  background-color: #2217bf;
 
   height: 180px;
 
@@ -120,7 +120,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .decoration-ball-tax
 {
-  background-color: #2320B9;
+  background-color: #2217bf;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -132,7 +132,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .decoration-ball-accounting
 {
-  background-color: #2320B9;
+  background-color: #2217bf;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -201,7 +201,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .decoration-ball-tax
 {
-  background-color: #2320B9;
+  background-color: #2217bf;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -213,7 +213,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .decoration-ball-accounting
 {
-  background-color: #2320B9;
+  background-color: #2217bf;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -226,7 +226,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .service-section-list-row-middle-decoration
 {
   width: 12px;
-  background-color: #3B26C6;
+  background-color: #2217bf;
 
   height: 120px;
 
