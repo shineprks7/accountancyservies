@@ -7,7 +7,7 @@
 .hero-section
 {
 
-    min-height: 100vh;
+    min-height: 600px;
 
     margin-top: 72px;
     
@@ -146,7 +146,7 @@
 
 .about-section-bottom-row .partner-box
 {
-    width: 464px;
+    width: calc(50% - 64px);
        background-color: #0d0d13;
 
        border:1px solid #fff;
@@ -932,6 +932,11 @@ background-color: #2217bf;
     padding-left: 48px;
     padding-right: 48px;
  }
+
+ .about-section-bottom-row .partner-box
+{
+  width: 100%;
+}
 
 
 }
