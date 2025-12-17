@@ -1,0 +1,39 @@
+
+.final-cta-wrapper
+{
+
+    background-color: #fff;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    background-color: #2217bf;
+
+
+}
+
+
+.final-cta-center-wrapper
+{
+
+}
+
+.final-cta-center-wrapper-btn-row
+{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+    flex-wrap: wrap;
+}
+
+.final-cta-center-wrapper .call-button
+
+{
+
+}
+
+.final-cta-center-wrapper .book-button
+
+{
+
+}

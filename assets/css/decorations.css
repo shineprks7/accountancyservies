@@ -26,11 +26,11 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .hero-background-white
 {
 
-  background-image: url(../images/patterns/hero_bg_pattern_white.png);
+  background-image: url(../images/patterns/hero_bg_pattern_white_2.png);
 
   background-repeat: repeat;
 
-  background-size: 64px 64px;
+  background-size: 32px 32px;
 
 }
 .hero-background-dark
@@ -94,6 +94,27 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 }
 
+.about-section .title-point
+{
+  /* display: inline-block;
+  background-color: #2217bf;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right:  12px; */
+
+
+}
+
+.about-section-title
+{
+  /* display: inline-block;
+  background-color: #fff;
+  color:#2217bf;
+  padding: 12px; */
+
+}
+
 .service-section-list-row-middle-decoration
 {
   width: 12px;
@@ -147,7 +168,12 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: relative;
 }
 
-.services-section-tax::after
+.services-section-tax .section-container
+{
+  position: relative;
+}
+
+.services-section-tax .decoration-ball-small
 
 {
  content: '';
@@ -155,7 +181,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  top:120px;
+  top:0px;
   left:120px;
   transform: translate(0,0%);
   position: absolute;
@@ -167,7 +193,12 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: relative;
 }
 
-.services-section-accounting::after
+.services-section-accounting .section-container
+{
+  position: relative;
+}
+
+.services-section-accounting .decoration-ball-small
 
 {
  content: '';
@@ -175,7 +206,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  bottom:120px;
+  bottom:0px;
   right:120px;
   transform: translate(0,0%);
   position: absolute;
@@ -185,7 +216,17 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 @media (max-width:1260px)  { 
 
 
+.services-section-accounting .decoration-ball-small
 
+{
+  right: 48px;
+}
+
+.services-section-tax .decoration-ball-small
+
+{
+  left: 48px;
+}
 
 }
 
@@ -278,13 +319,13 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 }
 
-.services-section-tax::after
+.services-section-accounting .decoration-ball-small
 
 {
   display: none;
 }
 
-.services-section-accounting::after
+.services-section-tax .decoration-ball-small
 
 {
   display: none;
