@@ -219,13 +219,13 @@
 
 
    background-color: #fff;
-   color:#0d0d13;
-           border:1px solid #0d0d13;
+   color:#1c139d;
+           border:2px solid #0b0840;
 
 
     /* border:1px solid #E05E3D; */
 
-    box-shadow: -8px -8px 0 0 #0d0d13;
+    box-shadow: -8px -8px 0 0 #0b0840;
 }
 
 
@@ -271,10 +271,14 @@
 
 .services-section-image-row-wrapper
 {
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   height: auto;
-  overflow-x: scroll;
+}
+
+.services-section-tax .services-section-image-row-wrapper
+{
+    margin-left: auto;
 }
 
 .services-section-image-row
@@ -284,6 +288,7 @@
     gap:8px;
     flex-wrap: wrap;
 }
+
 .services-section-image-card
 {
     width:calc(50% - 20px);
@@ -376,14 +381,17 @@ display: flex;
 .services-section-list-wrapper.tax
 
 {
-    background-color: #bbb8ea;
+    background-color: #dcdbe7;
+    border: 2px solid #1c139d;
 
 }
 
 .services-section-list-wrapper.accounting
 
 {
-    background-color: #bbb8ea;
+    background-color: #dcdbe7;
+
+    border: 2px solid #1c139d;
 
     width: calc(66.66% + 0px);
 
@@ -450,7 +458,7 @@ display: flex;
     width: 24px;
     height: 24px;
     background-color: #fff;
-    border:6px solid  #0d0d13;
+    border:6px solid  #1c139d;
 
 
     border-radius: 50%;
@@ -485,7 +493,7 @@ display: flex;
     height: 24px;
     background-color: #fff;
 
-    border:6px solid  #0d0d13;
+    border:6px solid  #1c139d;
 
     border-radius: 50%;
     display: inline-block;
@@ -514,14 +522,80 @@ display: flex;
 .section-information-general
 {
 
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 48px;
+    padding-bottom: 48px;
     margin-bottom: 0px;
-    text-align: center;
+    
+    
+
+}
+.section-information-general-row
+{
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cta-content-phone-number
+{
+    width: 50%;
+    padding: 24px;
+}
+.cta-phone-number-wrapper
+{
+    width: calc(40% -64px);
+        padding: 24px;
+
 }
 .section-general-information-title
 {
     text-transform: uppercase;
+}
+.general-info-icon-wrapper
+{
+    width: 36px;
+    height: 36px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    position: relative;
+}
+.general-info-icon-wrapper img
+
+{
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+}
+.general-info-icon-wrapper::before
+{
+    content:"";
+    border: 2px dashed #fff;
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    
+
+    animation: rotatebordericon  linear 10s  infinite;
+
+
+}
+
+@keyframes rotatebordericon
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+              transform: rotate(360deg);
+  
+    }
+
 }
 .general-info-call-button
 {
@@ -865,6 +939,32 @@ background-color: #2217bf;
 @media (max-width:720px)  { 
 
 
+    .services-section-image-row-wrapper
+{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  overflow-x: scroll;
+}
+
+.cta-content-phone-number
+{
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+}
+.cta-phone-number-wrapper
+{
+    width: 100%;
+        padding: 24px;
+
+}
+.general-info-icon-wrapper img
+
+{
+  
+  transform: rotate(0deg);
+}
 
  .section-container
  {
