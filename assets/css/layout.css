@@ -280,25 +280,29 @@
 {
   opacity: 1;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s ;
+    color:#000 !important;
+
 }
 .services-section-tax-content .services-headline-part
 {
   opacity: 1;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
 
+  color:#000 !important;
 
 }
 
 .services-section-accounting-content .services-headline-part.highlighted
 {
-  color:#403708 !important;
+  color:#2217bf !important;
   opacity: 1;
 }
 
 .services-section-tax-content .services-headline-part.highlighted
 {
-  color:#403708 !important;
+  color:#2217bf !important;
     opacity: 1;
+
       
 
 
