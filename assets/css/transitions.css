@@ -1,0 +1,97 @@
+.scroll-reveal-opac
+{
+  opacity: 0;
+
+  transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s ;
+}
+.inset-box-shadow-light
+{
+    position: relative;
+}
+.hero-title
+{
+    opacity: 0.1;
+      transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+
+}
+.hero-title.reveal
+{
+    opacity: 1;
+}
+.hero-sub-title
+{
+    opacity: 0.1;
+      transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+
+      transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+  transition-delay: 0.5s;
+
+}
+.hero-button
+{
+    opacity: 0;
+      transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+
+      transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+  transition-delay: 1s;
+
+}
+
+.hero-sub-title.reveal
+{
+    opacity: 1;
+}
+.hero-title.reveal
+{
+    opacity: 1;
+}
+.hero-button.reveal
+{
+    opacity: 1;
+
+}
+.hero-title.inset-box-shadow-light::after
+{
+    content: "";
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    
+    box-shadow: inset 400px 0px 50px 0px rgba(255, 255, 255, 1);
+    z-index: 1;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+
+}
+
+.hero-title.inset-box-shadow-light.reveal::after
+{
+
+
+    box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.2);
+
+}
+
+.hero-sub-title.inset-box-shadow-light::after
+{
+    content: "";
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    
+    box-shadow: inset 400px 0px 50px 0px rgba(255, 255, 255, 1);
+    z-index: 1;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+  transition-delay: 0.5s;
+
+}
+
+.hero-sub-title.inset-box-shadow-light.reveal::after
+{
+
+    box-shadow: inset 0px 0px 0px 0px rgba(255, 255, 255, 0.2);
+
+}

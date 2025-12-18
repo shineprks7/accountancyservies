@@ -53,48 +53,95 @@ function handleScroll(event)
     const servicesHeadlinePartsTax = document.querySelectorAll(".services-section-tax-content .services-headline-part");
 
 
+        const scrollRevealByOpacity = document.querySelectorAll(".scroll-reveal-opac");
+
+        const boxShadowScrollReveal = document.querySelectorAll(".scroll-reveal-box-shadow");
+
+
+
     let viewPortHeight = window.innerHeight;
 
     const viewPortWidth = window.innerWidth;
 
 
-    // aboutSectionScrollReveal.forEach((el) => {
+    scrollRevealByOpacity.forEach((el) => {
 
 
-    //     let elPosition = el.getBoundingClientRect();
+        let elPosition = el.getBoundingClientRect();
 
-    //      let top = elPosition.top;
+         let top = elPosition.top;
 
-    //      let currentPosition = viewPortHeight-top;
+         let currentPosition = viewPortHeight-top;
 
-    //        if(currentPosition > 0 && currentPosition < viewPortHeight)
-    //      {
+           if(currentPosition > 0 && currentPosition < viewPortHeight)
+         {
 
-    //         let diff = viewPortHeight - currentPosition;
+            let diff = viewPortHeight - currentPosition;
 
-    //         let point = viewPortHeight/100;
+            let point = viewPortHeight/100;
 
-    //         let pointToPercent = Math.round((currentPosition  / point ) ,0);
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
 
-    //         console.log("pointToPercent"+pointToPercent);
+            console.log("pointToPercent"+pointToPercent);
 
-    //         if(pointToPercent < 30 )
-    //         {
+            if(pointToPercent > 30 )
+            {
+                el.style.opacity = 1;
 
-    //         }
-    //         else
-    //         {
-    //             el.style.opacity = 1;
+            }
+            else
+            {
      
-    //         }
+            }
             
 
-    //      }
-    //      else
-    //      {
-    //      }
+         }
+         else
+         {
+         }
 
-    //  });
+     });
+      boxShadowScrollReveal.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight)
+         {
+
+            let diff = viewPortHeight - currentPosition;
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent > 20 )
+            {
+              el.classList.add("trigger-box-shadow-reveal");
+
+
+            }
+            else
+            {
+                   el.classList.remove("trigger-box-shadow-reveal");
+
+            }
+            
+
+         }
+         else
+         {
+                            el.classList.remove("trigger-box-shadow-reveal");
+
+         }
+
+     });
     
    
 
