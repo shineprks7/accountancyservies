@@ -150,6 +150,28 @@
 
     
 }
+.partner-firm-icon-wrapper
+{
+    padding: 4px;
+    border: 1px dashed #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    margin-bottom: 24px;
+}
+.partner-firm-icon-wrapper img
+{
+    width: 24px;
+    height: 24px;
+
+    
+
+
+}
 
 .about-section-bottom-row .partner-box
 {
@@ -1301,6 +1323,11 @@ width: 100%;
 {
     max-height: 0px;
     overflow: hidden;
+}
+
+.highlights-box
+{
+    min-height: 240px;
 }
 
 

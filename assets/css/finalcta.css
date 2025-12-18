@@ -37,3 +37,53 @@
 {
 
 }
+
+
+.finalcta-info-icon-wrapper
+{
+    width: 36px;
+    height: 36px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    position: relative;
+    transform: scale(3);
+
+}
+.finalcta-info-icon-wrapper img
+
+{
+  width: 24px;
+  height: 24px;
+  transform: rotate(-90deg);
+}
+.finalcta-info-icon-wrapper::before
+{
+    content:"";
+    border: 1px dotted #fff;
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    
+
+    animation: rotatebordericonfinacta  linear 5s  infinite;
+
+
+}
+
+@keyframes rotatebordericonfinacta
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+              transform: rotate(360deg);
+  
+    }
+
+}
