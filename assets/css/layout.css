@@ -903,10 +903,11 @@ background-color: #2217bf;
 
 .company-info-card
 {
-    border: 1px solid #3b3c85;
+    border: 1px solid #fff;
 
     color:#fff;
     position: relative;
+    box-shadow: 4px 4px 0px 0px rgba(255,255,255,1);
 
 }
 
@@ -936,26 +937,15 @@ background-color: #2217bf;
 
 .contact-info-card
 {
-    border: 2px solid #fff;
-
     
-    outline: 2px solid #3b3c85;
-    position: relative;
-
-    color:#fff;
 
 }
 
 .contact-info-title
 {
+    
    
     
-    transform: translate(0, 0);
-    padding:12px 0px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
-    border-radius: 12px;
 }
 .footer-contact-info-list
 {
@@ -964,6 +954,11 @@ background-color: #2217bf;
     align-items: center;
     gap:24px;
     font-family: 'Inter';
+
+    font-size: 20px;
+    line-height: 24px;
+
+
 
   
 }
@@ -1073,6 +1068,7 @@ background-color: #2217bf;
  
 }
 
+
 .hero-section-right-part
 {
 
@@ -1112,8 +1108,8 @@ background-color: #2217bf;
 
 .about-section-bottom
 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    /* padding-top: 48px;
+    padding-bottom: 48px; */
     padding-left: 12px;
         padding-right: 12px;
         width: 100%;
@@ -1230,6 +1226,11 @@ background-color: #2217bf;
     
 
     width: 100%;
+}
+
+.section-general-information-title
+{
+    /* line-height: 64px !important; */
 }
 
 .section-other-services-top
