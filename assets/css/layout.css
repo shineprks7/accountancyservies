@@ -1004,6 +1004,17 @@ background-color: #2217bf;
   overflow-x: scroll;
 }
 
+.highlights-section
+{
+    padding: 120px 60px;
+}
+
+
+.highlights-container
+{
+    gap:180px;
+}
+
 .cta-content-phone-number
 {
     width: 100%;
