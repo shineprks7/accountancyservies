@@ -276,14 +276,32 @@
  
 }
 
+.services-section-accounting-content .services-headline-part
+{
+  opacity: 1;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s ;
+}
+.services-section-tax-content .services-headline-part
+{
+  opacity: 1;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+
+
+}
+
 .services-section-accounting-content .services-headline-part.highlighted
 {
-  color:#2217bf !important;
+  color:#403708 !important;
+  opacity: 1;
 }
 
 .services-section-tax-content .services-headline-part.highlighted
 {
-  color:#2217bf !important;
+  color:#403708 !important;
+    opacity: 1;
+      
+
+
 }
 
 .services-section-image-row-wrapper

@@ -120,7 +120,7 @@ function handleScroll(event)
 
             console.log("pointToPercent"+pointToPercent);
 
-            if(pointToPercent > 40)
+            if(pointToPercent < 80 && pointToPercent > 40)
             {
                   el.classList.add("highlighted");
 
@@ -164,7 +164,7 @@ function handleScroll(event)
 
             console.log("pointToPercent"+pointToPercent);
 
-            if(pointToPercent > 45)
+            if(pointToPercent < 80 &&  pointToPercent > 45)
             {
                   el.classList.add("highlighted");
 
