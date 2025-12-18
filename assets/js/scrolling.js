@@ -57,6 +57,9 @@ function handleScroll(event)
 
         const boxShadowScrollReveal = document.querySelectorAll(".scroll-reveal-box-shadow");
 
+        const boxShadowScrollRevealAbout = document.querySelectorAll(".about-section .outset-box-shadow");
+
+        
 
 
     let viewPortHeight = window.innerHeight;
@@ -138,6 +141,48 @@ function handleScroll(event)
          else
          {
                             el.classList.remove("trigger-box-shadow-reveal");
+
+         }
+
+     });
+
+     boxShadowScrollRevealAbout.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight)
+         {
+
+            let diff = viewPortHeight - currentPosition;
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent > 30 )
+            {
+              el.classList.add("reveal");
+
+
+            }
+            else
+            {
+                  //  el.classList.remove("trigger-box-shadow-reveal");
+
+            }
+            
+
+         }
+         else
+         {
+                            // el.classList.remove("trigger-box-shadow-reveal");
 
          }
 

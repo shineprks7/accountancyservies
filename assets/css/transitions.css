@@ -8,6 +8,45 @@
 {
     position: relative;
 }
+
+.outset-box-shadow
+{
+  position: relative;
+  
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s ;
+
+  z-index: 1;
+}
+
+.outset-box-shadow::after
+{
+    
+   content: '';
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+    
+    box-shadow: inset 1000px 0px 50px 0px rgba(1, 0, 14, 1);
+    z-index: 10;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 2s ;
+
+}
+
+
+.outset-box-shadow
+{
+  opacity: 1;
+}
+.outset-box-shadow.reveal::after
+{
+
+
+    box-shadow: inset 0px 0px 0px 0px rgba(1, 0, 14, 0.75);
+
+}
+
 .hero-title
 {
     opacity: 0.1;
