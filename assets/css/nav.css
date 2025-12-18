@@ -126,7 +126,8 @@
   font-size: 16.4px;
   line-height: 20px;
   white-space: normal;
-  color: #10053a;
+  color: #fff;
+  background-color: #0C0840 !important;
 
   
 }
@@ -157,7 +158,8 @@
 
 {
     margin-top:48px;
-    font-size: 1.5em;
+    font-size: 28px;
+    line-height: 40px;
 
     display: block;
 
@@ -203,7 +205,6 @@ height: 96px;
   top:96px;
   left:0px;
   z-index: 1000;
-  background-color: #fff;
   height: calc( 100vh - 100px);
 
   width: 100%;
