@@ -276,6 +276,16 @@
  
 }
 
+.services-section-accounting-content .services-headline-part.highlighted
+{
+  color:#2217bf !important;
+}
+
+.services-section-tax-content .services-headline-part.highlighted
+{
+  color:#2217bf !important;
+}
+
 .services-section-image-row-wrapper
 {
   width: 80%;
