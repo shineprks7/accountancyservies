@@ -13,6 +13,8 @@
     
 }
 
+
+
 .hero-section-row
 {
     display: flex;
@@ -946,6 +948,11 @@ background-color: #2217bf;
 
 
 }
+@media (max-width: 1080px) {
+    .hero-section {
+        margin-top: 96px;
+    }
+}
 
 @media (max-width:720px)  { 
 
@@ -993,7 +1000,7 @@ background-color: #2217bf;
 
      height: auto;
 
-     flex-direction: column-reverse;
+     flex-direction: column;
 }
 
 .hero-section-left-part
