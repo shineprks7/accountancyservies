@@ -34,9 +34,9 @@
 .oservice-card
 {
 
-    width: 500px;
+    width: calc(50% - 24px);
 
-    border: 24px solid #fff;
+    border: 0px solid #fff;
 
 
 }
@@ -123,6 +123,21 @@
 
 
 
+
+
+}
+
+@media (max-width:1040px)  { 
+
+
+    .oservice-card
+{
+    border: 24px solid #fff;
+
+    width: calc(100% - 0px);
+}
+
+
 }
 
 
@@ -136,5 +151,7 @@
 .oservice-card
 {
     border: 8px solid #fff;
+
+    width: calc(100% - 0px);
 }
 }
