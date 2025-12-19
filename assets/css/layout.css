@@ -529,11 +529,17 @@ display: flex;
     border:6px solid  #1c139d;
 
 
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: inline-block;
 
 }
 
+.services-section-list-icon img
+{
+
+     width: 24px;
+     height: 24px;
+}
 .services-section-list-text
 {
     font-weight: bold !important;
@@ -563,7 +569,7 @@ display: flex;
 
     border:6px solid  #1c139d;
 
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: inline-block;
 
 }
