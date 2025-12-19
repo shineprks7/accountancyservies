@@ -150,8 +150,8 @@
 
 .oservice-card
 {
-    border: 8px solid #fff;
+    border: 0px solid #fff;
 
-    width: calc(100% - 0px);
+    width: calc(100% - 8px);
 }
 }
