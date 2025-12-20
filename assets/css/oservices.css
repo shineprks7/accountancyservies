@@ -38,13 +38,13 @@
 .oservice-card
 {
 
-    width: calc(40% - 48px);
+    width: calc(50% - 48px);
 
     border: 1px solid #a69bc2;
 
     border-radius: 12px;
 
-    box-shadow: 0 -12px 0 0 blue, 0 4px 0 0 blue ;
+    box-shadow: 0 -12px 0 0 #0C0840, 0 0px 0 0 #0C0840 ;
 
 
 }
@@ -65,15 +65,16 @@
 .oservice-list-wrapper
 {
     padding: 24px;
+    padding-left: 64px;
 }
 
 .oservices-list-item
 {
     font-size: 16px;
     line-height: 20px;
-    margin-top:12px;
+    margin-top:24px;
 
-    color:#01000e;
+    color:#3a3a3a;
 
     display: flex;
     gap:12px;
@@ -87,11 +88,12 @@
 
   text-transform: uppercase;
 
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
 
-  font-weight: normal !important;
-  color: #5D5C5C;
+  font-weight: bold !important;
+  color: #3a3a3a;
+  max-width: 200px;
 }
 .oservice-card p
 {
@@ -113,7 +115,7 @@
     width: 48px;
     height: 48px;
     
-    background-color: #000;
+    background-color: #01000e;
 
     border-radius: 50%;
 
@@ -129,7 +131,7 @@
 
 .oservice-card-content-wrapper
 {
-    width: calc(100% - 64px);
+    /* width: calc(100% - 64px); */
 
     margin-top: 48px;
         /* box-shadow: 4px 4px 0 0 #0b0840, 4px -4px 0 0 #0b0840 ; */
