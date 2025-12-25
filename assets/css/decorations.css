@@ -43,6 +43,23 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   background-size: 32px 32px;
 
 }
+.hero-background-grid-light
+{
+  background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+     linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+
+      background-image: linear-gradient(to right, #c7c6c6 1px, transparent 1px),
+     linear-gradient(to bottom, #c7c6c6 1px, transparent 1px);
+
+     background-size: 60px 20px;
+
+}
+.hero-background-grid-accent
+{
+  background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+     linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+
+}
 
 .hero-section-left-part::before
 {
@@ -76,7 +93,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   
   width: 120px;
   height: 100%;
-  background-color: #fff;
+  background-color: #1c139d;
     position: absolute;
 
 }
@@ -89,7 +106,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   
   width: 40px;
   height: 100%;
-  background-color: #fff;
+  background-color: #b6da16;
     position: absolute;
 
 }
@@ -142,8 +159,8 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .decoration-ball-tax
 {
   background-color: #2217bf;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   top:50%;
   right:24px;
@@ -154,13 +171,68 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .decoration-ball-accounting
 {
   background-color: #2217bf;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   top:50%;
   left:24px;
   transform: translate(0,-50%);
   position: absolute;
+
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #2217bf;
+  box-shadow: 12px 12px 0 0 #000;
+  border-radius: 6px;
+}
+
+.decoration-card-accounting
+{
+  /* background-color: #2217bf;
+  width: 80px;
+  height: 80px; */
+  border-radius: 50%;
+  top:50%;
+  left:24px;
+  transform: translate(0,-50%);
+  position: absolute;
+
+  width: 320px;
+  height: 400px;
+
+  background-color: #fff;
+  border: 1px solid #2217bf;
+  box-shadow: 12px 12px 0 0 #000 ;
+  border-radius: 6px;
+
+    padding: 12px;
+
+}
+
+.decoration-card-list-item
+{
+  font-size: 16px;
+  padding: 8px 8px;
+}
+
+.decoration-card-tax
+{
+  
+  border-radius: 50%;
+  top:50%;
+  right:24px;
+  transform: translate(0,-50%);
+  position: absolute;
+
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #2217bf;
+  box-shadow: 12px 12px 0 0 #000;
+  border-radius: 6px;
+
+  padding: 12px;
 }
 
 .services-section-tax
@@ -206,7 +278,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  bottom:0px;
+  top:0px;
   right:120px;
   transform: translate(0,0%);
   position: absolute;
