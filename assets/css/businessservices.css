@@ -43,8 +43,8 @@
    height: auto;
    padding: 24px;
    background-color: #3A1FB8;
-      background-color: #fffdfd;
-      color:#3A1FB8;
+      /* background-color: #fffdfd; */
+      color:#ffff;
 
 }
 
