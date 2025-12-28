@@ -474,6 +474,9 @@ display: flex;
 
     top:120px;
     left: 0px;
+     background: #2b1cce;
+
+                 color:#fff;
 
     
 }
@@ -498,7 +501,9 @@ display: flex;
        background-image: linear-gradient(to right, #fff 1px, #ddd 1px),
                  linear-gradient(to bottom, #fff 1px, #ddd 1px);
 
-                 background: none;
+                 background: #2b1cce;
+
+                 color:#fff;
 
     background-size: 12px 12px;
 
@@ -548,7 +553,7 @@ display: flex;
  left: -32px;
  width: 4px;
  height: 100%;
- background-color: #2217bf;
+ background-color: #fff;
  position: absolute;
 }
 

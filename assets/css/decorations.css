@@ -229,7 +229,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: absolute;
 
   width: 320px;
-  height: 400px;
+  height: auto;
   background-color: #fff;
   border: 1px solid #2217bf;
   box-shadow: 12px 12px 0 0 #000;

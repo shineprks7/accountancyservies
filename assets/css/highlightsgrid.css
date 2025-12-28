@@ -1,0 +1,38 @@
+
+
+.highlights-grid-section
+{
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+}
+
+.highlights-grid-wrapper
+{
+    display: grid;
+
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
+
+    gap:80px;
+
+}
+
+
+.highlights-grid-column-1
+{
+    grid-column: span 6;
+}
+.highlights-grid-column-2
+{
+    grid-column: span 6;
+}
+.highlights-grid-column-3
+{
+    grid-column: span 6;
+
+}
+.highlights-grid-column-4
+{
+    grid-column: span 6;
+
+}
