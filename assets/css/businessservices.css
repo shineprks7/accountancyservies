@@ -87,7 +87,7 @@
 
 }
 
-.business-services-grid-colspan-4
+/* .business-services-grid-colspan-4
 {
   grid-column: span 4;
 
@@ -96,7 +96,7 @@
 .business-services-grid-colspan-8
 {
   grid-column: span 8;
-}
+} */
 
 
 .business-services-grid-column-1
@@ -109,6 +109,9 @@
   padding: 48px;
 
   border: 2px solid #01000e;
+
+    grid-column: span 6;
+
 }
 .business-services-grid-column-2
 {
@@ -119,6 +122,7 @@
       border-radius: 24px;
   padding: 48px;
     border: 2px solid #1c139d;
+    grid-column: span 6;
 
 
 }
@@ -133,6 +137,8 @@
   padding: 48px;
 
   border: 2px solid #1c139d;
+      grid-column: span 6;
+
 
 }
 .business-services-grid-column-4
@@ -144,6 +150,9 @@
   padding: 48px;
 
     border: 2px solid #01000e;
+
+        grid-column: span 6;
+
 
 
     

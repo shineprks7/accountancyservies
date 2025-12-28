@@ -99,6 +99,8 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   background-color: #1c139d;
     position: absolute;
 
+    display: none;
+
 }
 
 .about-section-bottom::after
@@ -111,6 +113,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   height: 100%;
   background-color: #b6da16;
     position: absolute;
+    display: none;
 
 }
 
