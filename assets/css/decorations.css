@@ -71,6 +71,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   height: 36px;
   background-color: #2217bf;
   position: absolute;
+  display: none;
 }
 .hero-section-left-part::after
 {
@@ -82,6 +83,8 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   height: 36px;
   background-color: #2217bf;
     position: absolute;
+      display: none;
+
 
 }
 

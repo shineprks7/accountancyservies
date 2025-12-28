@@ -1,0 +1,65 @@
+
+
+.company-grid-wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(24px, 1fr));
+
+    gap:24px;
+
+}
+
+.company-grid-column-1
+{
+    grid-column: span 6;
+}
+.company-grid-column-2
+{
+    grid-column: span 6;
+}
+
+.company-grid-column-3
+{
+    grid-column: span 6;
+}
+
+.company-grid-column-4
+{
+    grid-column: span 6;
+}
+
+.company-grid-list-wrapper
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    height: 100%;
+}
+
+.partner-box-3
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    height: 100%;
+
+}
+
+.company-grid-list-wrapper li
+{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+
+
+
+

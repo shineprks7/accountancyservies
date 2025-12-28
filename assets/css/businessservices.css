@@ -15,7 +15,7 @@
     padding-top: 120px;
     padding-bottom: 120px;
 
-    border-top: 24px solid #3A1FB8;
+    border-top: 2px solid #3A1FB8;
 }
 .section-business-services-row
 {
@@ -107,6 +107,8 @@
 
   border-radius: 24px;
   padding: 48px;
+
+  border: 2px solid #01000e;
 }
 .business-services-grid-column-2
 {
@@ -116,6 +118,8 @@
 
       border-radius: 24px;
   padding: 48px;
+    border: 2px solid #1c139d;
+
 
 }
 .business-services-grid-column-3
@@ -128,6 +132,8 @@
       border-radius: 24px;
   padding: 48px;
 
+  border: 2px solid #1c139d;
+
 }
 .business-services-grid-column-4
 {
@@ -136,6 +142,9 @@
 
       border-radius: 24px;
   padding: 48px;
+
+    border: 2px solid #01000e;
+
 
     
 }
@@ -147,4 +156,9 @@
 .business-services-list-item
 {
     margin-top: 12px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+    line-height: 24px;
 }
