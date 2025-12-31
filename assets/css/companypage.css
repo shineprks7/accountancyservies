@@ -1,0 +1,198 @@
+
+
+.company-title-section
+{
+    margin-top:72px;
+
+}
+
+
+.company-page-section
+{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+
+.company-page-title
+{
+  font-weight: 300;
+
+  font-size: 48px;
+}
+
+
+
+.company-about-section-grid
+{
+  display: grid;
+
+  grid-template-columns: repeat(12,minmax(0px,1fr));
+
+  gap:24px;
+
+}
+
+.company-about-section-grid-column-1
+{
+  grid-column: span 6;
+}
+
+.company-about-section-grid-column-2
+{
+  grid-column: span 6;
+
+}
+.company-about-section-grid-column-3
+{
+  grid-column: span 6;
+
+  background-color: #D5B43C;
+    padding: 24px;
+
+    margin-top: 120px;
+}
+
+.company-about-section-grid-column-4
+{
+  grid-column: span 6;
+
+    background-color: #3833C6;
+    padding: 24px;
+
+        margin-top: 120px;
+
+
+
+}
+
+.company-about-image-wrapper
+{
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3833C6;
+  width: 80%;
+  margin-left: auto;
+}
+.company-about-image-wrapper img
+
+{
+
+  max-width: 100%;
+  max-height: 100%;
+}
+.company-page-core-services-section-wrapper
+{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+.company-page-core-services-sub-section
+
+{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.company-page-core-services-sub-section-title
+{
+
+}
+
+.company-page-core-services-sub-section-subtitle
+{
+  max-width: 700px;
+  font-weight: 400;
+}
+
+.company-page-core-services-sub-section-paragraph
+{
+  margin-top: 48px;
+}
+
+.divider-core-services-sub-section
+{
+    width: 100%;
+    height: 2px;
+    background-color: #acaaaa;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.company-page-core-services-list-grid
+{
+
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0px, 1fr));
+
+    gap:48px;
+
+   
+}
+
+.company-page-core-services-list-grid-column
+{
+  grid-column: span 6;
+
+  font-size: 28px;
+  line-height: 34px;
+
+  font-weight: 400;
+
+}
+
+@media (max-width:1260px)  { 
+
+
+
+
+
+}
+@media (max-width: 1080px) {
+    
+}
+
+@media (max-width:720px)  { 
+
+.company-page-core-services-list-grid-column
+{
+  grid-column: span 12;
+
+  font-size: 28px;
+  line-height: 34px;
+
+  font-weight: 400;
+
+}
+
+.company-about-section-grid-column-1
+{
+  grid-column: span 12;
+}
+
+.company-about-section-grid-column-2
+{
+  grid-column: span 12;
+}
+.company-about-section-grid-column-3
+{
+  grid-column: span 12;
+}
+.company-about-section-grid-column-4
+{
+  grid-column: span 12;
+}
+
+.company-about-image-wrapper
+{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+}
+
+
+}
