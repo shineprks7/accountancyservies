@@ -134,6 +134,7 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
 
         position: relative;
 
+
 }
 
 .about-section-top-content
@@ -152,7 +153,7 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
         padding-right: 120px;
         width: 100%;
         position: relative;
-
+  overflow: hidden;
 }
 
 .about-section-bottom-row
