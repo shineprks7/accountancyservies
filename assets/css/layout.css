@@ -1239,7 +1239,7 @@ background-color: #2217bf;
   width: 100%;
   max-width: 100%;
   height: auto;
-  overflow-x: scroll;
+  overflow:hidden;
 }
 
 .highlights-section
@@ -1410,13 +1410,13 @@ background-color: #2217bf;
 }
 .services-section-image-row
 {
-    width: 160%;
+    width: 100%;
 }
 
 
 .services-section-image-card 
 {
-    /* width: 50%; */
+    width: 100%;
 }
 
 
@@ -1552,6 +1552,20 @@ width: 100%;
 .highlights-box
 {
     min-height: 240px;
+}
+
+.services-section-image-card-benefits
+{
+  
+    display: none;
+
+}
+
+.services-section-image-card-benefits-accounting
+{
+  
+    display: none;
+
 }
 
 

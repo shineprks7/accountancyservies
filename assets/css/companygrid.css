@@ -60,6 +60,54 @@
 }
 
 
+@media (max-width:1260px)  { 
+
+
+
+
+
+}
+@media (max-width: 1080px) {
+    
+}
+
+@media (max-width:720px)  { 
+
+    .company-grid-wrapper
+{
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
+
+
+}
+
+  .company-grid-column-1
+{
+    grid-column: span 12;
+}
+.company-grid-column-2
+{
+    grid-column: span 12;
+}
+
+.company-grid-column-3
+{
+    grid-column: span 12;
+}
+
+.company-grid-column-4
+{
+    grid-column: span 12;
+}
+
+
+
+
+}
+
+
+
+
+
 
 
 

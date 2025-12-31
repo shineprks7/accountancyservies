@@ -409,6 +409,31 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   display: none;
 }
 
+.decoration-card-accounting
+{
+
+ position: relative;
+
+ top:0%;
+  left:24px;
+  transform: translate(0, 0%);
+
+  margin-top: 48px;
+}
+
+.decoration-card-tax
+{
+
+   position: relative;
+
+ top:0%;
+  left:24px;
+  transform: translate(0, 0%);
+
+  margin-top: 48px;
+
+}
+
 
 
 }

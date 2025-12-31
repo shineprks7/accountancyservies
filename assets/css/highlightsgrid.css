@@ -36,3 +36,49 @@
     grid-column: span 6;
 
 }
+
+
+@media (max-width:1260px)  { 
+
+
+
+
+
+}
+@media (max-width: 1080px) {
+    
+}
+
+@media (max-width:720px)  { 
+
+.highlights-grid-wrapper
+
+{
+    gap: 8px;
+}
+    .highlights-grid-column-1
+{
+    grid-column: span 12;
+}
+.highlights-grid-column-2
+{
+    grid-column: span 12;
+
+    margin-top: 48px;
+}
+.highlights-grid-column-3
+{
+    grid-column: span 12;
+    margin-top: 48px;
+
+}
+.highlights-grid-column-4
+{
+    grid-column: span 12;
+        margin-top: 48px;
+
+
+}
+
+
+}
