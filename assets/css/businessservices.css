@@ -81,7 +81,7 @@
 
             border-radius: 24px;
 
-   background-color: #DCDED8;
+   background-color: #fff;
 
 
 
@@ -226,6 +226,20 @@ padding: 8px;
     position:relative;
 
     width: 100%;
+}
+
+.section-business-services-image-caption
+{
+   position: absolute;
+   width: 90%;
+   left: 5%;
+   top:-80px;
+   height: auto;
+   padding: 8px;
+   background-color: #3A1FB8;
+      /* background-color: #fffdfd; */
+      color:#ffff;
+
 }
 
 

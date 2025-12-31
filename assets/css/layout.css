@@ -666,10 +666,9 @@ display: flex;
 
   margin-top:120px !important;
   margin-bottom: 120px !important;
-   background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
-     linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+   
+  background-color: #fff;
 
-     background-size: 40px 40px;
 }
 .service-section-list-row-middle .left-part-content
 {
@@ -1327,7 +1326,21 @@ background-color: #2217bf;
  overflow: hidden;
 
 }
+.hero-image
+{
+    width: 200px;
+    height: 200px;
 
+    background-color: #b6da16;
+background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
+     linear-gradient(to bottom, #4f22b8 1px, transparent 1px);
+
+     background-size: 120px 40px;
+    border-radius: 50%;
+    min-width: 80vw;
+    min-height: 80vw;
+    border:2px solid navy;
+}
  .about-section-top-content
 {
 
