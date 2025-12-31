@@ -1,5 +1,8 @@
 
-
+section
+{
+  overflow: hidden;
+}
 .company-title-section
 {
     margin-top:72px;
