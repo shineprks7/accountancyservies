@@ -67,6 +67,11 @@
 
 }
 
+.business-services-grid-wrapper-outer-wrapper
+{
+    overflow-x: scroll;
+}
+
 .business-services-grid-wrapper
 {
  display: grid;
@@ -177,41 +182,38 @@
 
 .business-services-grid-wrapper
 {
-    grid-template-columns: repeat(12, minmax(0px, 1fr));
+    grid-template-columns: repeat(12, minmax(120px, 1fr));
 
-gap: 8px;
+gap: 24px;
 padding: 8px;
 
 }
 
   .business-services-grid-column-1
 {
-    grid-column: span 12;
+    grid-column: span 3;
     padding: 24px;
 }
   .business-services-grid-column-2
 {
-    grid-column: span 12;
+    grid-column: span 3;
         padding: 24px;
 
-                margin-top: 24px;
 
 }
 
   .business-services-grid-column-3
 {
-    grid-column: span 12;
+    grid-column: span 3;
         padding: 24px;
-        margin-top: 24px;
 
 }
 
   .business-services-grid-column-4
 {
-    grid-column: span 12;
+    grid-column: span 3;
         padding: 24px;
 
-        margin-top: 24px;
 }
 
 .decoration-ball-business-services

@@ -1,4 +1,7 @@
-
+.company-grid-wrapper-outer
+{
+    overflow-x: scroll;
+}
 
 .company-grid-wrapper
 {
@@ -87,36 +90,32 @@
 
     .company-grid-wrapper
 {
-    grid-template-columns: repeat(12, minmax(10px, 1fr));
+    grid-template-columns: repeat(12, minmax(100px, 1fr));
 
-    gap:0px;
+    gap:24px;
 
 }
 
   .company-grid-column-1
 {
-    grid-column: span 12;
-        margin-top: 24px;
+    grid-column: span 3;
 
 }
 .company-grid-column-2
 {
-    grid-column: span 12;
-        margin-top: 24px;
+    grid-column: span 3;
 
 }
 
 .company-grid-column-3
 {
-    grid-column: span 12;
-        margin-top: 24px;
+    grid-column: span 3;
 
 }
 
 .company-grid-column-4
 {
-    grid-column: span 12;
-        margin-top: 24px;
+    grid-column: span 3;
 
 }
 
