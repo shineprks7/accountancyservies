@@ -97,7 +97,7 @@ section
 {
   grid-column: span 12;
 
-  background-color: #79E118;
+  background-color: #b6da16;
     padding: 24px;
   height: 100%;
 
@@ -108,7 +108,7 @@ section
 {
   grid-column: span 12;
 
-    background-color: #18255E;
+    background-color: #0C0840;
     padding: 24px;
 
   height: 100%;
@@ -151,6 +151,12 @@ section
 
 @media (max-width:720px)  { 
 
+
+  .contact-section-grid
+  {
+    gap:0px;
+  
+  }
 .contact-section-grid-column-1
 {
   grid-column: span 12;
@@ -159,13 +165,25 @@ section
   
 }
 
+.contact-section-sub-grid
+{
+   gap:0px;
+}
+
+.contact-page-cta-information-part-notes
+{
+  font-style: italic;
+}
+
 .contact-section-grid-column-2
 {
   grid-column: span 12;
  
    padding: 24px;
   
-      background-color: #3723D2;
+      background-color: #2217bf;
+
+      margin-top: 24px;
 
 
 }
