@@ -1,6 +1,6 @@
 .company-grid-wrapper-outer
 {
-    overflow-x: scroll;
+    overflow-x: visible;
 }
 
 .company-grid-wrapper
@@ -84,7 +84,10 @@
 @media (max-width:720px)  { 
 
 
-
+.company-grid-wrapper-outer
+{
+    overflow-x: scroll;
+}
 
 
 

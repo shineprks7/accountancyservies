@@ -69,7 +69,7 @@
 
 .business-services-grid-wrapper-outer-wrapper
 {
-    overflow-x: scroll;
+    overflow-x: visible;
 }
 
 .business-services-grid-wrapper
@@ -179,6 +179,11 @@
 
 
 @media (max-width:720px)  { 
+
+    .business-services-grid-wrapper-outer-wrapper
+{
+    overflow-x: scroll;
+}
 
 .business-services-grid-wrapper
 {
