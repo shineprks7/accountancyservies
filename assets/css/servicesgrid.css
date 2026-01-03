@@ -86,6 +86,11 @@
 
 @media (max-width:720px)  { 
 
+  .services-grid-wrapper
+  {
+        grid-template-columns: repeat(12,minmax(10px, 1fr));
+
+  }
   .services-grid-title-column
 {
 
