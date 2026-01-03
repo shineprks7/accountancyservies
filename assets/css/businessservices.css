@@ -177,8 +177,39 @@
     line-height: 24px;
 }
 
+    .direction-icons-wrapper-business-services-grid
+
+    {
+        display: none;
+    }
+
 
 @media (max-width:720px)  { 
+
+    .direction-icons-wrapper-business-services-grid
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.direction-arrow-icon-previous img
+
+{
+  width: 48px;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+.direction-arrow-icon-next img
+
+{
+  width: 48px;
+  height: auto;
+}
 
     .business-services-grid-wrapper-outer-wrapper
 {

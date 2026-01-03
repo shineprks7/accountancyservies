@@ -69,6 +69,11 @@
 
 }
 
+.direction-icons-wrapper-company-grid
+{
+    display: none;
+}
+
 
 @media (max-width:1260px)  { 
 
@@ -83,6 +88,35 @@
 
 @media (max-width:720px)  { 
 
+.direction-icons-wrapper-company-grid
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.direction-arrow-icon-previous img
+
+{
+  width: 48px;
+  height: auto;
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+
+.direction-arrow-icon-next img
+
+{
+  width: 48px;
+  height: auto;
+    cursor: pointer;
+
+}
+
+
 
 .company-grid-wrapper-outer
 {
@@ -93,7 +127,7 @@
 
     .company-grid-wrapper
 {
-    grid-template-columns: repeat(12, minmax(100px, 1fr));
+    grid-template-columns: repeat(12, minmax(120px, 1fr));
 
     gap:24px;
 

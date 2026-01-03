@@ -152,6 +152,20 @@ section
 @media (max-width:720px)  { 
 
 
+  .contact-information-section-column-1
+{
+
+    width: 100%;
+
+}
+.contact-information-section-column-2
+{
+
+    width: 100%;
+    margin-top: 24px;
+   
+}
+
   .contact-section-grid
   {
     gap:0px;
