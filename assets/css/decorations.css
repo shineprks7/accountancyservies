@@ -219,6 +219,9 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 .decoration-card-list-item
 {
   font-size: 16px;
+  font-weight: bold;
+
+
   padding: 8px 8px;
 }
 
@@ -382,6 +385,8 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: absolute;
 }
 
+
+
 .service-section-list-row-middle-decoration
 {
   width: 12px;
@@ -433,6 +438,8 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   margin-top: 48px;
 
 }
+
+
 
 
 

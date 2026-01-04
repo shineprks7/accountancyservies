@@ -65,13 +65,18 @@
 .company-grid-card
 {
 
-    box-shadow: 0px 0px 8px 4px rgba(255,255,255,0.05);
+    box-shadow: 0px 0px 2px 4px rgba(255,255,255,0.25);
 
 }
 
 .direction-icons-wrapper-company-grid
 {
     display: none;
+}
+
+.arrow-disabled
+{
+    opacity: 0.25;
 }
 
 
