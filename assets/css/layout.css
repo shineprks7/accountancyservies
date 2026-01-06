@@ -455,7 +455,7 @@ display: flex;
                         background: linear-gradient(270deg, #12043f 0%, #07033b 92.3%);
 
    /* background: linear-gradient(270deg, #2a2a2b 0%, #66667f 92.3%); */
-        box-shadow:0 0 0 12px #2b1cce;
+        box-shadow:0 0 0 12px #fff;
 
        display: flex;
     align-items: center;
@@ -476,8 +476,9 @@ display: flex;
     top:120px;
     left: 0px;
      background: #2b1cce;
+     background: #fff;
 
-                 color:#fff;
+                 color:#2b1cce;
 
     
 }
@@ -550,12 +551,15 @@ display: flex;
 .tax-benefits-item::before
 {
  content:'';
- top:0px;
+ top:50%;
  left: -32px;
- width: 4px;
- height: 100%;
- background-color: #fff;
+ width: 12px;
+ height: 12px;
+ background-color: #2b1cce;
  position: absolute;
+ border-radius: 50%;
+
+ transform: translate(0,-50%);
 }
 
 
