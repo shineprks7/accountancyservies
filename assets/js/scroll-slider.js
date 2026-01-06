@@ -125,6 +125,26 @@ superwrapperSliders.forEach(slidersuperwrapper => {
     
 });
 
+superwrapperSliders.forEach(slidersuperwrapper => {
+
+    const parentWrapper =  slidersuperwrapper.querySelector('.slider-parent-wrapper');
+
+     const leftbutton =  slidersuperwrapper.querySelector('.direction-arrow-icon-previous');
+       const rightbutton =  slidersuperwrapper.querySelector('.direction-arrow-icon-next');
+
+      parentWrapper.addEventListener("scroll", function( event ){
+     
+      
+
+        updateButtonsScroll(parentWrapper, leftbutton, rightbutton);
+
+        
+    
+     });
+
+});
+
+
 function updateButtonsScroll(parentContainer,leftbutton, rightbutton)
     {
         // alert("I am updating");
@@ -156,3 +176,5 @@ function updateButtonsScroll(parentContainer,leftbutton, rightbutton)
 
          }
     }
+
+
