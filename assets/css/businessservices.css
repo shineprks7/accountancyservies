@@ -260,6 +260,8 @@ padding: 8px;
 {
     grid-column: span 3;
     padding: 24px;
+      box-shadow: 8px 8px 0px 0px #b6da16, -8px -8px 16px 0px rgba(0,0,0,0.1) ;
+
 }
   .business-services-grid-column-2
 {
@@ -273,6 +275,10 @@ padding: 8px;
 {
     grid-column: span 3;
         padding: 24px;
+
+
+            box-shadow: 8px 8px 0px 0px #1c139d, -8px -8px 16px 0px rgba(0,0,0,0.1);
+
 
 }
 
