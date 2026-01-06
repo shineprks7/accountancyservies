@@ -15,20 +15,28 @@
 .company-grid-column-1
 {
     grid-column: span 6;
+    background-color: #0C0840;
 }
 .company-grid-column-2
 {
     grid-column: span 6;
+    /* background-color: #1c139b; */
+
 }
 
 .company-grid-column-3
 {
     grid-column: span 6;
+    /* background-color: #1c139b; */
+
+
 }
 
 .company-grid-column-4
 {
     grid-column: span 6;
+        background-color: #0C0840;
+
 }
 
 .company-grid-list-wrapper
@@ -70,7 +78,9 @@
 .company-grid-card
 {
 
-    box-shadow: 0px 0px 2px 4px rgba(255,255,255,0.25);
+    box-shadow: -4px 4px 8px 1px rgba(255,255,255,0.25);
+
+    
 
 }
 
@@ -140,6 +150,9 @@
     grid-template-columns: repeat(12, minmax(120px, 1fr));
 
     gap:24px;
+
+       padding: 24px;
+
 
 }
 

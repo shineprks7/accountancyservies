@@ -672,7 +672,8 @@ display: flex;
   margin-top:120px !important;
   margin-bottom: 120px !important;
    
-  background-color: #fff;
+  background-color: #96b13f;
+  padding: 48px;
 
 }
 .service-section-list-row-middle .left-part-content
@@ -682,6 +683,7 @@ display: flex;
     padding: 24px;
 
     font-style: italic;
+    background-color: #fff;
 
 }
 .service-section-list-row-middle .right-part-content
@@ -690,6 +692,7 @@ display: flex;
         padding: 24px;
 
     font-style: italic;
+    background-color: #fff;
 
 }
 
