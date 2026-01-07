@@ -140,26 +140,47 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .service-section-list-row-middle-decoration
 {
-  width: 12px;
+  /* width: 12px;
   background-color: #2217bf;
 
-  height: 180px;
+  
+  width:180px;
+  height:180px;
 
   border-radius: 6px;
-  position: relative;
+  position: relative; */
+  padding: 12px;
+
+  background-color: #fff;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  border: 2px solid #2217bf;
+
+  box-shadow: 8px 8px 0px 0px  #2217bf;
+
+
+  
 
 }
 
 .service-section-list-row-middle-decoration::after
 {
-  content: "";
+  /* content: "";
   width: 100%;
   height: 8px;
   background-color: #96b13f;
   position: absolute;
   top:50%;
   left:0px;
-  transform: translate(0,-50%);
+  transform: translate(0,-50%); */
+
+  
 }
 
 .decoration-ball-tax
@@ -218,12 +239,21 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .decoration-card-list-item
 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 
 
-  padding: 8px 8px;
+  padding: 8px 0px;
+
+  border-bottom: 2px solid #b6da16;
 }
+
+.decoration-card-list-item:last-of-type
+{
+
+  border-bottom: 0px;
+}
+
 
 .decoration-card-tax
 {
@@ -389,7 +419,7 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
 
 .service-section-list-row-middle-decoration
 {
-  width: 12px;
+  /* width: 12px;
   background-color: #2217bf;
 
   height: 120px;
@@ -398,7 +428,9 @@ background-image: url(../images/patterns/hero_bg_pattern_2.png);
   position: relative;
 
   transform: rotate(90deg);
-  transform-origin: center;
+  transform-origin: center; */
+  margin-top: 48px;
+  margin-bottom: 48px;
 
 }
 

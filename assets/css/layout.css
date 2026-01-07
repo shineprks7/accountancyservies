@@ -673,7 +673,9 @@ display: flex;
   margin-bottom: 120px !important;
    
   background-color: #96b13f;
-  padding: 48px;
+
+  background-color: #86b660;
+  padding: 24px;
 
 }
 .service-section-list-row-middle .left-part-content
