@@ -2,8 +2,10 @@
 
 .highlights-grid-section
 {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+            background-color: #eee9e9;
+
 
 }
 
@@ -21,19 +23,33 @@
 .highlights-grid-column-1
 {
     grid-column: span 6;
+
+    padding-bottom: 8px;
+
+    box-shadow: 0px 24px 0px 0px #0C0840;
 }
 .highlights-grid-column-2
 {
     grid-column: span 6;
+        padding-bottom: 8px;
+
+    box-shadow: 0px 24px 0px 0px #b6da16;
+
 }
 .highlights-grid-column-3
 {
     grid-column: span 6;
+        padding-bottom: 8px;
+
+    box-shadow: 0px 24px 0px 0px #86b660;
 
 }
 .highlights-grid-column-4
 {
     grid-column: span 6;
+        padding-bottom: 8px;
+
+    box-shadow: 0px 24px 0px 0px #1c139d;
 
 }
 
