@@ -363,7 +363,7 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
 {
   opacity: 1;
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s ;
-    color:#000 !important;
+    color:#5b5b61 !important;
 
 }
 .services-section-tax-content .services-headline-part
@@ -371,7 +371,7 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
   opacity: 1;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
 
-  color:#000 !important;
+  color:#080808 !important;
 
 }
 
