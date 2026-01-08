@@ -134,13 +134,36 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
 
         position: relative;
 
+        display: flex;
+        flex-wrap: wrap;
+
 
 }
+
+
 
 .about-section-top-content
 {
 
             width: 50%;
+
+}
+
+.about-section-image-wrapper
+{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-image-wrapper img
+
+{
+
+    width: 96%;
+    height: auto;
 
 }
 
@@ -1356,6 +1379,12 @@ background-image: linear-gradient(to right, #4f22b8 1px, transparent 1px),
 
             width: calc(100% - 12px);
 
+}
+.about-section-image-wrapper
+
+{
+               width: calc(100% - 12px);
+ 
 }
 .about-section-bottom-row .partner-box
 {

@@ -23,6 +23,11 @@
 
     border-bottom: 1px solid #fff;
     box-sizing: border-box;
+
+    
+
+
+    font-family: 'Playfair Display';
 }
 
 .spacer
@@ -110,10 +115,14 @@
 
   
 }
-.desktop-menu li
+.desktop-menu li a
 {
   font-size: 18px;
   line-height: 24px;
+
+      font-family: 'Playfair Display' !important;
+      letter-spacing: 1.2px;
+
 }
 
 .mobile-menu-wrapper
@@ -164,6 +173,15 @@
     display: block;
 
     
+
+    
+}
+
+.mobile-menu-list-item a
+{
+  font-family: 'Playfair Display' !important;
+
+          letter-spacing: 1.2px;
 }
 @media (max-width:1260px)  { 
   
