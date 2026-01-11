@@ -235,6 +235,7 @@ section
   justify-content: center;
 
   flex-direction: column;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 
@@ -285,7 +286,7 @@ section
 .company-page-core-services-list-grid-column.active .company-services-list-item-card
 {
 
-      max-height:1200px;
+      max-height:600px;
 
 
 
