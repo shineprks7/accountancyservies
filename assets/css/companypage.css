@@ -360,7 +360,7 @@ section
 .company-page-core-services-list-grid-column.active .company-services-list-item-card
 {
 
-      max-height:2000px;
+      max-height:5000px;
 
 
 
@@ -474,13 +474,13 @@ section
 
 .company-page-core-services-list-grid-column.active .company-services-list-item-card h4
 {
-  padding: 12px;
+  padding: 24px 12px;
 
 
 }
 .company-page-core-services-list-grid-column.active .company-services-list-item-card h5
 {
-  padding: 12px;
+  padding:24px 12px;
 
 
 }
@@ -488,20 +488,22 @@ section
 
 .company-page-core-services-list-grid-column.active .company-services-list-item-card ul
 {
-  padding: 12px;
+  padding:24px 12px;
 }
 
 
 .company-page-core-services-list-grid-column.active .company-services-list-item-card p
 {
-  padding: 12px;
+  padding: 24px 12px;
+
+
 
 
 }
 
 .company-page-core-services-list-grid-column.active .company-services-list-item-card li
 {
-  padding: 8px;
+  padding: 24px;
 
   padding-left: 24px;
 
