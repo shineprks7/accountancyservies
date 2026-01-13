@@ -47,13 +47,31 @@
           else
            {
 
-            siblings.forEach(sibling => {
+          //   siblings.forEach(sibling => {
 
-             sibling.classList.remove('active');
+          //    sibling.classList.remove('active');
 
-           });
+          //  });
 
              currentparent.classList.add('active');
+
+            //  setTimeout( ()=> 
+            //  {
+
+            //   currentparent.scrollIntoView(
+            //   {
+            //     behavior:"smooth",
+            //     block:"start"
+            //   }
+            //  );
+
+            //  },1000);
+
+
+
+
+
+             
  
            }
 
