@@ -251,6 +251,22 @@ section
   color: #fff;
   padding: 24px;
 
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  position: fixed;
+  top:72px;
+  left: 0px;
+  height: auto;
+  max-height: 100vh;
+   display: block;
+  overflow: scroll;
+
+  z-index: 1000;
+     background-color: #0C0840;
+
+  transform: rotate(0deg);
+
 }
 .company-page-core-services-list-grid-column::after
 {
@@ -296,8 +312,7 @@ section
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   
-    height: auto;
-    max-height: 0px;
+     max-height: 0px;
     overflow: hidden;
  
 
@@ -395,14 +410,8 @@ section
 
   .company-page-core-services-list-grid-column.active
 {
-  grid-column: span 12;
-
-
-
-  /* background-color: #3833C6; */
-  color: #fff;
-  padding: 12px;
-
+  
+  top: 48px;
 }
 
 

@@ -42,16 +42,19 @@
 
             currentparent.classList.remove('active');
 
-            
+            document.body.style.overflow = "scroll";
+
           }
           else
            {
 
-          //   siblings.forEach(sibling => {
+            siblings.forEach(sibling => {
 
-          //    sibling.classList.remove('active');
+             sibling.classList.remove('active');
 
-          //  });
+           });
+
+            document.body.style.overflow = "hidden";
 
              currentparent.classList.add('active');
 
