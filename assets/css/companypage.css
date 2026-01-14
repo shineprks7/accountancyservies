@@ -1,3 +1,45 @@
+.services-back-to-page-btn
+{
+
+position: relative;
+    min-width: 240px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-around;
+
+    gap:12px;
+    align-items: center;
+
+   
+    
+    font-size: 18px;
+    line-height: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 6px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.services-back-to-page-btn img
+{
+   width: 24px;
+   height: 24px;
+
+   transform: scaleX(-1);
+}
+
+.services-back-to-page-btn-wrapper
+{
+  padding: 24px;
+  padding-left: 24px;
+}
 
 section
 {
@@ -245,7 +287,7 @@ section
 {
   grid-column: span 12;
 
-
+ 
 
   /* background-color: #3833C6; */
   color: #fff;
@@ -259,6 +301,9 @@ section
   left: 0px;
   height: auto;
   max-height: 100vh;
+
+   height: calc(100vh - 72px);
+
    display: block;
   overflow: scroll;
 
@@ -296,10 +341,31 @@ section
 
 }
 
+.company-page-core-services-list-grid-column
+{
+
+}
+
 .company-page-core-services-list-grid-column.active .company-services-list-item-card
 {
-  width: 75%;
+  width: 80%;
+
+  min-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.company-page-core-services-list-grid-column.active .company-services-list-item-wrapper
+
+{
+  width: 80%;
+    min-width: 800px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 .company-page-core-services-list-grid-column .company-services-list-item-card
 {
@@ -412,13 +478,29 @@ section
 {
   
   top: 48px;
+
+  height: calc(100vh - 48px);
 }
 
 
   .company-page-core-services-list-grid-column.active .company-services-list-item-card
 {
   width: 100%;
+  min-width: 100%;
 }
+
+.company-page-core-services-list-grid-column.active .company-services-list-item-wrapper
+
+{
+  width: 100%;
+    min-width: 100%;
+
+
+ 
+
+
+}
+
 .company-page-core-services-list-grid-column
 {
   grid-column: span 12;
