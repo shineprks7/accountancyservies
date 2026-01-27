@@ -2697,6 +2697,22 @@ __webpack_require__.r(__webpack_exports__);
         this.inputdata = JSON.parse(JSON.stringify(data));
       }
     },
+    updateReceivedInputDeductions: function updateReceivedInputDeductions(data) {
+      if (data && data.populardeductions) {
+        console.log("External Value is received");
+        this.inputdata.populardeductions = JSON.parse(JSON.stringify(data.populardeductions));
+
+        //    this.inputdata = JSON.parse(JSON.stringify(data));
+      }
+    },
+    updateReceivedInputSalaryInfo: function updateReceivedInputSalaryInfo(data) {
+      if (data && data.salaryinformation) {
+        console.log("External Value is received");
+        this.inputdata.salaryinformation = JSON.parse(JSON.stringify(data.salaryinformation));
+
+        //    this.inputdata = JSON.parse(JSON.stringify(data));
+      }
+    },
     updateValidationData: function updateValidationData(data) {
       if (data) {
         var stagenumber = data.stage;
@@ -2786,7 +2802,7 @@ __webpack_require__.r(__webpack_exports__);
     disabilitydeductionOldRegime: function disabilitydeductionOldRegime() {
       if (this.disabilitystatus == 'disablity') {
         return 70000;
-      } else if (this.disabilitystatus == 'severedisablity') {
+      } else if (this.disabilitystatus == 'severedisability') {
         return 125000;
       } else {
         return 0;
@@ -2861,6 +2877,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
 //
 //
 //
@@ -22979,7 +22997,9 @@ var render = function () {
         _c("aside", { staticClass: "taxform-grid-item" }, [
           _c("div", { staticClass: "mtop-24 taxform-input-field-container" }, [
             _c("div", { staticClass: "taxform-field-label" }, [
-              _vm._v("\n                   Basic Deductions\n               "),
+              _vm._v(
+                "\n                   Basic Deductions (Deduction under 80C)\n               "
+              ),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "taxform-text-field-wrapper" }, [
@@ -23740,7 +23760,7 @@ var render = function () {
             _c("salaryincome", {
               attrs: { stage: "2", inputdata: _vm.inputdata },
               on: {
-                "input-export": _vm.updateReceivedInput,
+                "input-export": _vm.updateReceivedInputSalaryInfo,
                 "stage-to": _vm.getStageToInfo,
                 "completion-status": _vm.updateValidationData,
               },
@@ -23766,7 +23786,7 @@ var render = function () {
             _c("deductions", {
               attrs: { stage: "3", inputdata: _vm.inputdata },
               on: {
-                "input-export": _vm.updateReceivedInput,
+                "input-export": _vm.updateReceivedInputDeductions,
                 "stage-to": _vm.getStageToInfo,
                 "completion-status": _vm.updateValidationData,
               },
@@ -23837,9 +23857,9 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "taxform-results-card card-old-regime" }, [
+    _c("div", { staticClass: "taxform-results-card card-new-regime " }, [
       _c("h3", { staticClass: "taxform-results-card-title" }, [
-        _vm._v(" As Per Old Regime"),
+        _vm._v(" As Per New Regime"),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "taxform-result-grid-wrapper" }, [
@@ -23850,7 +23870,7 @@ var render = function () {
             _c("h5", [_vm._v(" Taxable Income ")]),
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
-              _vm._v(" " + _vm._s(this.taxableincomeoldregime) + " "),
+              _vm._v(" ₹ " + _vm._s(this.taxableincomenewregime) + " "),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
@@ -23865,7 +23885,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
-                    _vm._v("  " + _vm._s(this.deductionsoldregime) + "  "),
+                    _vm._v(" ₹ " + _vm._s(this.deductionsnewregime) + "  "),
                   ]),
                 ]),
               ]),
@@ -23884,8 +23904,8 @@ var render = function () {
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
               _vm._v(
-                " " +
-                  _vm._s(this.calculateIncomeTaxOldRegime().finaltaxpayable) +
+                " ₹ " +
+                  _vm._s(this.calculateIncomeTaxNewRegime().finaltaxpayable) +
                   " "
               ),
             ]),
@@ -23901,8 +23921,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
-                        _vm._s(this.calculateIncomeTaxOldRegime().taxpayable) +
+                      " ₹ " +
+                        _vm._s(this.calculateIncomeTaxNewRegime().taxpayable) +
                         "  "
                     ),
                   ]),
@@ -23915,8 +23935,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
-                        _vm._s(this.calculateIncomeTaxOldRegime().surcharge) +
+                      "  ₹ " +
+                        _vm._s(this.calculateIncomeTaxNewRegime().surcharge) +
                         "   "
                     ),
                   ]),
@@ -23929,9 +23949,9 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
+                      "  ₹ " +
                         _vm._s(
-                          this.calculateIncomeTaxOldRegime()
+                          this.calculateIncomeTaxNewRegime()
                             .healthandeducationcess
                         ) +
                         "  "
@@ -23945,9 +23965,9 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "taxform-results-card card-new-regime mtop-48" }, [
+    _c("div", { staticClass: "taxform-results-card card-old-regime mtop-48" }, [
       _c("h3", { staticClass: "taxform-results-card-title" }, [
-        _vm._v(" As Per New Regime"),
+        _vm._v(" As Per Old Regime"),
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "taxform-result-grid-wrapper" }, [
@@ -23958,7 +23978,7 @@ var render = function () {
             _c("h5", [_vm._v(" Taxable Income ")]),
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
-              _vm._v(" " + _vm._s(this.taxableincomenewregime) + " "),
+              _vm._v(" ₹ " + _vm._s(this.taxableincomeoldregime) + " "),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
@@ -23973,7 +23993,7 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
-                    _vm._v("  " + _vm._s(this.deductionsnewregime) + "  "),
+                    _vm._v("  ₹ " + _vm._s(this.deductionsoldregime) + "  "),
                   ]),
                 ]),
               ]),
@@ -23992,8 +24012,8 @@ var render = function () {
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
               _vm._v(
-                " " +
-                  _vm._s(this.calculateIncomeTaxNewRegime().finaltaxpayable) +
+                " ₹ " +
+                  _vm._s(this.calculateIncomeTaxOldRegime().finaltaxpayable) +
                   " "
               ),
             ]),
@@ -24009,8 +24029,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
-                        _vm._s(this.calculateIncomeTaxNewRegime().taxpayable) +
+                      "  ₹ " +
+                        _vm._s(this.calculateIncomeTaxOldRegime().taxpayable) +
                         "  "
                     ),
                   ]),
@@ -24023,8 +24043,8 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
-                        _vm._s(this.calculateIncomeTaxNewRegime().surcharge) +
+                      "  ₹ " +
+                        _vm._s(this.calculateIncomeTaxOldRegime().surcharge) +
                         "   "
                     ),
                   ]),
@@ -24037,9 +24057,9 @@ var render = function () {
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
                     _vm._v(
-                      "  " +
+                      "  ₹ " +
                         _vm._s(
-                          this.calculateIncomeTaxNewRegime()
+                          this.calculateIncomeTaxOldRegime()
                             .healthandeducationcess
                         ) +
                         "  "
@@ -24074,7 +24094,9 @@ var staticRenderFns = [
         _vm._v("  Standard Deduction   "),
       ]),
       _vm._v(" "),
-      _c("span", { staticClass: "breakdown-item-data" }, [_vm._v("  50000  ")]),
+      _c("span", { staticClass: "breakdown-item-data" }, [
+        _vm._v(" ₹  75000  "),
+      ]),
     ])
   },
   function () {
@@ -24106,7 +24128,9 @@ var staticRenderFns = [
         _vm._v("  Standard Deduction   "),
       ]),
       _vm._v(" "),
-      _c("span", { staticClass: "breakdown-item-data" }, [_vm._v("  75000  ")]),
+      _c("span", { staticClass: "breakdown-item-data" }, [
+        _vm._v("  ₹ 50000  "),
+      ]),
     ])
   },
   function () {
@@ -24614,7 +24638,7 @@ var render = function () {
               class: _vm.assessmentyear == "2026" ? "selected" : "",
               on: {
                 click: function ($event) {
-                  return _vm.setAssesementYear("2025")
+                  return _vm.setAssesementYear("2026")
                 },
               },
             },
@@ -24632,7 +24656,7 @@ var render = function () {
               class: _vm.assessmentyear == "2025" ? "selected" : "",
               on: {
                 click: function ($event) {
-                  return _vm.setAssesementYear("2026")
+                  return _vm.setAssesementYear("2025")
                 },
               },
             },

@@ -190,7 +190,7 @@ taxform-text-field-wrapper .text-field::hover
 
 .taxform-next-button
 {
-    background-color: #6D52A4;
+    background-color: #2B3BB8;
     padding: 12px;
     text-align: center;
 
@@ -542,7 +542,13 @@ taxform-text-field-wrapper .text-field::hover
 
 
 @media (max-width:820px)  { 
+.taxform-grid-wrapper
+{
 
+  gap:0px;
+
+
+}
   .taxform-grid-wrapper .taxform-grid-item
 
 
@@ -570,7 +576,7 @@ taxform-text-field-wrapper .text-field::hover
 }
 .form-container
 {
-  padding: 12px 12px;
+  padding: 48px 12px;
 }
 
 .taxform-results-card-title
