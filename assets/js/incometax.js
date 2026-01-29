@@ -2764,6 +2764,13 @@ __webpack_require__.r(__webpack_exports__);
         if (this.activeStage < 4) {
           this.activeStage++;
           this.activeSubStage = 1;
+          setTimeout(function () {
+            var formtoppart = document.querySelector('.taxform-progress-wrapper');
+            formtoppart.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 100);
         }
       } else if (data == 'pre') {
         if (this.activeStage > 1) {
@@ -2877,6 +2884,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 //
 //
 //
@@ -4194,6 +4207,13 @@ __webpack_require__.r(__webpack_exports__);
           'mreliefsurcharge': mreliefsurcharge,
           'healthandeducationcess': healthandeducationcess
         };
+        var intFormatter = new Intl.NumberFormat('en-IN');
+        Object.entries(finalcalculation).forEach(function (_ref) {
+          var _ref2 = _slicedToArray(_ref, 2),
+            key = _ref2[0],
+            value = _ref2[1];
+          finalcalculation[key] = intFormatter.format(value);
+        });
         return finalcalculation;
       } else {
         var errorresult = {
@@ -4267,6 +4287,13 @@ __webpack_require__.r(__webpack_exports__);
           'mreliefsurcharge': mreliefsurcharge,
           'healthandeducationcess': healthandeducationcess
         };
+        var intFormatter = new Intl.NumberFormat('en-IN');
+        Object.entries(finalcalculation).forEach(function (_ref3) {
+          var _ref4 = _slicedToArray(_ref3, 2),
+            key = _ref4[0],
+            value = _ref4[1];
+          finalcalculation[key] = intFormatter.format(value);
+        });
         return finalcalculation;
       } else {
         var errorresult = {
@@ -23870,14 +23897,26 @@ var render = function () {
             _c("h5", [_vm._v(" Taxable Income ")]),
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
-              _vm._v(" ₹ " + _vm._s(this.taxableincomenewregime) + " "),
+              _vm._v(
+                " ₹ " +
+                  _vm._s(_vm._f("toinr")(this.taxableincomenewregime)) +
+                  " "
+              ),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
               _vm._m(0),
               _vm._v(" "),
               _c("ul", { staticClass: "breakdown-content" }, [
-                _vm._m(1),
+                _c("li", { staticClass: "breakdown-item" }, [
+                  _c("span", { staticClass: "breakdown-item-label" }, [
+                    _vm._v("  Standard Deduction   "),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "breakdown-item-data" }, [
+                    _vm._v(" ₹  " + _vm._s(_vm._f("toinr")("75000")) + "  "),
+                  ]),
+                ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "breakdown-item" }, [
                   _c("span", { staticClass: "breakdown-item-label" }, [
@@ -23885,7 +23924,11 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
-                    _vm._v(" ₹ " + _vm._s(this.deductionsnewregime) + "  "),
+                    _vm._v(
+                      " ₹ " +
+                        _vm._s(_vm._f("toinr")(this.deductionsnewregime)) +
+                        "  "
+                    ),
                   ]),
                 ]),
               ]),
@@ -23911,7 +23954,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
-              _vm._m(2),
+              _vm._m(1),
               _vm._v(" "),
               _c("ul", { staticClass: "breakdown-content" }, [
                 _c("li", { staticClass: "breakdown-item" }, [
@@ -23978,14 +24021,26 @@ var render = function () {
             _c("h5", [_vm._v(" Taxable Income ")]),
             _vm._v(" "),
             _c("p", { staticClass: "taxform-results-card-result-amount" }, [
-              _vm._v(" ₹ " + _vm._s(this.taxableincomeoldregime) + " "),
+              _vm._v(
+                " ₹ " +
+                  _vm._s(_vm._f("toinr")(this.taxableincomeoldregime)) +
+                  " "
+              ),
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
-              _vm._m(3),
+              _vm._m(2),
               _vm._v(" "),
               _c("ul", { staticClass: "breakdown-content" }, [
-                _vm._m(4),
+                _c("li", { staticClass: "breakdown-item" }, [
+                  _c("span", { staticClass: "breakdown-item-label" }, [
+                    _vm._v("  Standard Deduction   "),
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "breakdown-item-data" }, [
+                    _vm._v("  ₹ " + _vm._s(_vm._f("toinr")("50000")) + "  "),
+                  ]),
+                ]),
                 _vm._v(" "),
                 _c("li", { staticClass: "breakdown-item" }, [
                   _c("span", { staticClass: "breakdown-item-label" }, [
@@ -23993,7 +24048,11 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("span", { staticClass: "breakdown-item-data" }, [
-                    _vm._v("  ₹ " + _vm._s(this.deductionsoldregime) + "  "),
+                    _vm._v(
+                      "  ₹ " +
+                        _vm._s(_vm._f("toinr")(this.deductionsoldregime)) +
+                        "  "
+                    ),
                   ]),
                 ]),
               ]),
@@ -24019,7 +24078,7 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "breakdown-wrapper" }, [
-              _vm._m(5),
+              _vm._m(3),
               _vm._v(" "),
               _c("ul", { staticClass: "breakdown-content" }, [
                 _c("li", { staticClass: "breakdown-item" }, [
@@ -24089,20 +24148,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "breakdown-item" }, [
-      _c("span", { staticClass: "breakdown-item-label" }, [
-        _vm._v("  Standard Deduction   "),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "breakdown-item-data" }, [
-        _vm._v(" ₹  75000  "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("p", { staticClass: "breakdown-title" }, [
       _c("span", [_vm._v(" Breakdown of Tax Payable ")]),
       _vm._v(" "),
@@ -24117,20 +24162,6 @@ var staticRenderFns = [
       _c("span", [_vm._v(" Deductions ")]),
       _vm._v(" "),
       _c("span"),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "breakdown-item" }, [
-      _c("span", { staticClass: "breakdown-item-label" }, [
-        _vm._v("  Standard Deduction   "),
-      ]),
-      _vm._v(" "),
-      _c("span", { staticClass: "breakdown-item-data" }, [
-        _vm._v("  ₹ 50000  "),
-      ]),
     ])
   },
   function () {
@@ -36929,6 +36960,13 @@ __webpack_require__(/*! ../bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ../bootstrap */ "./resources/js/bootstrap.js");
 
 
+var intFormatterGlobal = new Intl.NumberFormat('en-IN');
+vue__WEBPACK_IMPORTED_MODULE_1__["default"].filter('toinr', function (value) {
+  if (value === null || value === undefined) {
+    return "";
+  }
+  return intFormatterGlobal.format(value);
+});
 
 // import store from './screeningstore.js'; 
 
