@@ -59,6 +59,19 @@
 
 }
 
+.highlights-grid-paragraph
+{
+     font-weight: 300;
+             color:#00000c;
+    font-style: italic;
+
+}
+.highlights-grid-title
+{
+    font-weight: 500;
+    font-style: italic;
+    
+}
 
 @media (max-width:1260px)  { 
 

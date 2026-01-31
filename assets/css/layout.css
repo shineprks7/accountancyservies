@@ -699,7 +699,7 @@ display: flex;
    
   background-color: #96b13f;
 
-  background-color: #86b660;
+  background-color: #9b9bdc;
   padding: 48px 24px;
 
 }
@@ -712,6 +712,8 @@ display: flex;
     font-style: italic;
     background-color: #fff;
 
+    font-weight: 300;
+
 }
 .service-section-list-row-middle .right-part-content
 {
@@ -720,6 +722,7 @@ display: flex;
 
     font-style: italic;
     background-color: #fff;
+    font-weight: 300;
 
 }
 

@@ -283,6 +283,8 @@ section
 
 }
 
+
+
 .company-page-core-services-list-grid-column.active
 {
   grid-column: span 12;
@@ -297,12 +299,12 @@ section
   padding-bottom: 48px;
 
   position: fixed;
-  top:72px;
+  top:0px;
   left: 0px;
   height: auto;
   max-height: 100vh;
 
-   height: calc(100vh - 72px);
+   height: calc(100vh - 0px);
 
    display: block;
   overflow: scroll;

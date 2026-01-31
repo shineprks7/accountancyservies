@@ -18,7 +18,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@75,100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wdth,wght@75,100..800&&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 
    <link rel="stylesheet" href="assets/css/colors.css" />
@@ -69,7 +69,7 @@
             <li><a class="" href="index.html#about-section"> Who We Are </a></li>
             <li><a class="" href="index.html#services-section"> What We Do </a></li>
 
-            <li><a class="" href="contact.html"> Let's Connect </a></li>
+            <li><a class="" href="contact.html"> Contact Us </a></li>
 
 
 
@@ -97,9 +97,9 @@
        <div class="mobile-menu-wrapper">
         <ul class="mobile-menu-list"> 
             <li class="mobile-menu-list-item"> <a class="mobile-menu-link mobile-link-button" href="index.html#hero-section"> Home </a>  </li>
-            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="index.html#about-section"> About Us </a></li>
-            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="index.html#services-section"> Services </a> </li>
-            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="contact.html"> Contact </a></li>
+            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="index.html#about-section"> Who We are </a></li>
+            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="index.html#services-section"> What We Do </a> </li>
+            <li class="mobile-menu-list-item"><a class="mobile-menu-link mobile-link-button" href="contact.html"> Contact Us </a></li>
 
 
             <li class="mobile-menu-list-item"><a class="mobile-menu-button-link" href="tel:+918489901189"> <button class="nav-cta-button primary-border accent-bg"> <img src="assets/images/icons/nav_cta_phone_2.svg"/> <div> 8489901189 </div>  </button> </a> </li> 
@@ -132,9 +132,9 @@
                       </h4>
 
 
-                         <a href="contact.html#contact-info"> <button class="hero-button inset-box-shadow-light accent-bg light-primary-font padding-vert-12 mtop-48"> Contact Us 
+                         <a href="contact.html#contact-info"> <button class="hero-button inset-box-shadow-light  dark-primary-bg light-primary-font padding-vert-12 mtop-48"> Contact Us 
                
-                               <img src="assets/images/icons/arrow_right_light.svg" />
+                              <span class="contact-info-icon-wrapper"> <img src="assets/images/icons/arrow_right_light.svg" /> </span>  
             
                         </button> </a>
 
@@ -183,7 +183,7 @@
 
     
 
-     <section class="services-grid-section">
+     <section class="services-grid-section" id="services-section"> 
         <div class="section-container">
 
         <div class="services-grid-title-row">
@@ -194,7 +194,7 @@
                
 
             </div>
-            <div class="services-grid-title-column services-grid-title-content">
+            <div class="services-grid-title-column services-grid-title-content"> 
 
                <h3 class="primary-shade-2-font primary-serif">What We Do</h3>
 
@@ -209,51 +209,54 @@
         <main class="services-grid-wrapper">
 
                <div class="services-grid-column">
-                 <div class="services-grid-column-content">
+                 <a href="#accounting-services" class="services-grid-column-content">
+
+                
 
                  Accounting & 
                  Bookkeeping
+                 </a> 
                 
-                 </div> 
                </div>
                <div class="services-grid-column">
-                    <div class="services-grid-column-content">
+                    <a href="#tax-services"  class="services-grid-column-content">
 
                        Tax Services
-                    </div> 
+                    </a> 
 
                </div>
                <div class="services-grid-column">
-                                    <div class="services-grid-column-content">
+                                    <a href="#business-operations-support"  class="services-grid-column-content">
+
 
                              Business Operation Support
-                             </div> 
+                                    </a> 
 
                </div>
                <div class="services-grid-column">
 
-                           <div class="services-grid-column-content">
+                           <a href="#payroll-hr-support" class="services-grid-column-content" >
 
                                                    Payroll & HR Services Support
                 
-                            </div> 
+                           </a> 
 
                </div>
                <div class="services-grid-column">
-                           <div class="services-grid-column-content">
+                           <a href="#business-compliance-services" class="services-grid-column-content">
 
                           Business Compliance Services
-                           </div> 
+                           </a> 
 
                 
                </div>
                <div class="services-grid-column">
-                       <div class="services-grid-column-content">
+                       <a href="#business-registration-services" class="services-grid-column-content">
 
 
                                Business Registration Services
 
-                   </div>
+                       </a>
                 
                </div>
         </main>
@@ -263,7 +266,7 @@
 
      </section>
 
-     <section class="services-section-tax">
+     <section class="services-section-tax" id="tax-services">
             <main class="section-container">
 
                             <h1 class="mtop-24 primary-shade-1-font primary-serif" style="text-align: right;"> Tax Services</h1>
@@ -336,36 +339,38 @@
                  </div>
                  <div class="decoration-card-tax">
 
+                   <h5 class="primary-shade-2-font decoration-card-title"> We Provide....</h5>
+
                      <li class="decoration-card-list-item">
 
-                         GST Registration & Filing
+                         GST Registration & Filing Support
                       
                     </li>
                      <li class="decoration-card-list-item">
 
-                         Individual & Business Tax Return Filing
+                         Individual & Business Tax Return Filing Support
                       
                     </li>
                      <li class="decoration-card-list-item">
 
-                         Annual Business Tax Return Filing
+                         Annual Business Tax Return Filing Support
                       
                     </li>
                      <li class="decoration-card-list-item">
 
-                         TDS Return Filing
+                         TDS Return Filing Services
 
                       
                     </li>
                     <li class="decoration-card-list-item">
 
-                    Employee Tax Declaration & Compliance
+                    Employee Tax Declaration & Compliance Services
 
                       
                     </li>
                     <li class="decoration-card-list-item">
 
-                    Preperation & Filing of Statuory Forms (24Q, 26Q, Form 16)
+                    Preperation & Filing of Statuory Forms (24Q, 26Q, Form 16) Services
 
                       
                     </li>
@@ -380,7 +385,7 @@
             </main>
      </section>
 
-     <section class="services-section-accounting">
+     <section class="services-section-accounting" id="accounting-services">
             <main class="section-container">
                             <div class="decoration-ball-small">
 
@@ -455,36 +460,38 @@
                   
 
                  </div>
-                 <div class="decoration-card-accounting">
+                 <div class="decoration-card-accounting light-primary-font">
 
 
+
+                  <h5 class=" decoration-card-title"> We Provide....</h5>
 
 
                   <li class="decoration-card-list-item">
 
-                         Digital Book Keeping
+                         Digital Book Keeping Services
                       
                     </li>
                       <li class="decoration-card-list-item">
 
-                           All your Day-to-day Accounts Management
+                          Handling of  All your Day-to-day Accounts Management 
                       
                     </li>
                     <li class="decoration-card-list-item">
 
-                    Petty Cash Management
-                      
-                    </li>
-
-                    <li class="decoration-card-list-item">
-
-                        Ledger Handling & Cash Flow Tracking
+                    Petty Cash Management Services
                       
                     </li>
 
                     <li class="decoration-card-list-item">
 
-                        Bank Reconcillation & Deposits Management
+                        Ledger Handling & Cash Flow Tracking 
+                      
+                    </li>
+
+                    <li class="decoration-card-list-item">
+
+                        Bank Reconcillation & Deposits Management Services
                       
                     </li>
 
@@ -526,6 +533,8 @@
 
                             <div class="service-section-list-row-middle-decoration">
 
+                                 <img src="assets/images/icons/starbuilding.svg" style="width:120px;height: auto;" /> 
+
                             </div>
                             <h2 class="right-part-content primary-shade-1-font ">
 
@@ -551,7 +560,7 @@
 
                         <div class="cta-button-account_tax-wrapper">
 
-                           <a href="contact.html#contact-info"> <button class="cta-button-account_tax accent-bg light-primary-font padding-vert-12 mtop-48"> Contact Us 
+                           <a href="contact.html#contact-info"> <button class="cta-button-account_tax dark-primary-bg light-primary-font padding-vert-12 mtop-48"> Contact Us 
                
                                <img src="assets/images/icons/arrow_right_light.svg" />
             
@@ -1124,6 +1133,9 @@
 
                            <h1 class="primary-shade-1-font primary-serif primary-serif"> Business Services</h1>
 
+
+
+
                            <div class="mtop-24">
 
                              <h4> We take responsibity
@@ -1150,12 +1162,31 @@
                    Let's Look at our Extensive Business Services.
                 </h4>
 
-               <main class="business-services-grid-wrapper mtop-24">
+                
+            <aside class="slider-super-wrapper">
 
-                   <div class="business-services-grid-colspan-4 business-services-grid-column-1">
+              <div class="direction-icons-wrapper-business-services-grid">
 
+
+                      <span class="direction-arrow-icon-previous"> <img src="assets/images/icons/direction-icon-blue.svg"  /> </span>
+                      <span class="direction-arrow-icon-next"> <img src="assets/images/icons/direction-icon-blue.svg"  /> </span>
+
+              </div>
+
+
+               <div class="business-services-grid-wrapper-outer-wrapper  slider-parent-wrapper ">
+
+                
+
+               <main class="business-services-grid-wrapper mtop-24 ">
+
+                   <div id="business-registration-services" class="business-services-grid-colspan-4 business-services-grid-column-1 slider-item">
+
+
+
+                       <div class="image-wrapper-business-services"><img src="assets/images/icons/registration.svg" /> </div>
                       
-                       <h3 class="primary-serif"> Business Registration Services</h3>
+                       <h3 class="primary-serif mtop-24"> Business Registration Services</h3>
 
 
                        <ul class="mtop-48 business-services-list-wrapper">
@@ -1172,9 +1203,11 @@
                       
 
                    </div>
-                   <div class="business-services-grid-colspan-8 business-services-grid-column-2 primary-shade-1-font">
+                   <div id="business-compliance-services"  class="business-services-grid-colspan-8 business-services-grid-column-2 primary-shade-1-font slider-item">
 
-                       <h3 class="primary-serif"> Business Compliance Services</h3>
+                      <div class=""><img src="assets/images/icons/goverment-icon.svg" /> </div>
+
+                       <h3 class="primary-serif mtop-24"> Business Compliance Services</h3>
 
 
                        <ul class="mtop-48 business-services-list-wrapper">
@@ -1189,10 +1222,11 @@
                       
                     
                    </div>
-                    <div class="business-services-grid-colspan-8 business-services-grid-column-3 primary-shade-1-font">
+                    <div id = "business-operations-support"  class="business-services-grid-colspan-8 business-services-grid-column-3 primary-shade-1-font slider-item">
 
-                       
-                       <h3 class="primary-serif"> Business Operations Support</h3>
+                      <div class=""><img src="assets/images/icons/billing.svg" /> </div>
+       
+                       <h3 class="primary-serif mtop-24"> Business Operations Support</h3>
 
 
                        <ul class="mtop-48 business-services-list-wrapper">
@@ -1206,11 +1240,12 @@
                        </ul>
                     
                    </div>
-                    <div class="business-services-grid-colspan-4 business-services-grid-column-4">
+                    <div id="payroll-hr-support"   class="business-services-grid-colspan-4 business-services-grid-column-4 slider-item">
 
+                      <div class=""><img src="assets/images/icons/payroll.svg" /> </div>
                        
                     
-                     <h3 class="primary-serif"> Payroll & HR Support</h3>
+                     <h3 class="primary-serif mtop-24"> Payroll & HR Support</h3>
 
 
                        <ul class="mtop-48 business-services-list-wrapper">
@@ -1226,12 +1261,17 @@
                    </div>
 
                </main>
-          </div>
+               </div>
+
+              </div>
+
+
+          </aside>
 
       </section>
 
 
-      <section class="about-section dark-primary-bg">
+      <section class="about-section dark-primary-bg" id="about-section">
            <div class="about-section-top">
 
             <div class="padding-vert-24 about-section-top-content">
@@ -1257,26 +1297,47 @@
 
              </div>
 
+             <div class ="about-section-image-wrapper">
+                 <img  src="assets/images/firm_geo.png" /> 
+             </div>
+
            </div>
            <div class="about-section-bottom light-primary-font">
+
+            <aside class="slider-super-wrapper">
+              <div class="direction-icons-wrapper-company-grid ">
+
+
+                      <span class="direction-arrow-icon-previous"> <img src="assets/images/icons/direction-icon-white.svg"  /> </span>
+                      <span class="direction-arrow-icon-next"> <img src="assets/images/icons/direction-icon-white.svg"  /> </span>
+
+              </div>
+
+
+            <div class="company-grid-wrapper-outer slider-parent-wrapper">
+
+
+
+
+              
 
                <div class=" company-grid-wrapper">
 
                  <div class="company-grid-column-1">
 
-                      <div class="company-grid-list-wrapper grey-border padding-vert-24 padding-horz-48">
+                      <div class="company-grid-list-wrapper company-grid-card padding-vert-24 padding-horz-48">
 
                         <div> 
-                          <li> Three Firms -  Tailored Services Based on Client's Business Requirements.   </li>
-                          <li> Combined Solutions   </li>
-                          <li> Strategic Management and Advisory </li>
+                          <li class="company-grid-list-item"> Three Firms -  Tailored Services Based on Client's Business Requirements.   </li>
+                          <li class="company-grid-list-item"> Combined Solutions   </li>
+                          <li class="company-grid-list-item"> Strategic Management and Advisory </li>
 
                           </div>
                       </div>
 
                  </div>
 
-                 <div class="company-grid-column-2 scroll-reveal-opac  grey-border padding-vert-24 padding-horz-48">
+                 <div class="company-grid-column-2   company-grid-card   padding-vert-24 padding-horz-48">
 
                                         <span class="partner-firm-icon-wrapper"> <img src="assets/images/icons/apartment-light.svg" /> </span> 
 
@@ -1284,27 +1345,27 @@
                       
                       
                        <span class="primary-serif"> ASAP ASSOCIATES </span> </h4>
-                     <p class="mtop-36 light-primary-font">For All Your Tax , Compliance and Auditing Requirements .</p>
+                     <p class="mtop-36 secondary-grey-font">For All Your Tax , Compliance and Auditing Requirements .</p>
 
-                     <a href="" ><button class="mtop-36 partner-services-button primary-shade-2-bg light-primary-font padding-vert-12"> Know More </button></a>
+                     <a href="asap.html" ><button class="mtop-36 partner-services-button primary-shade-2-bg light-primary-font padding-vert-12"> Know More </button></a>
 
                  </div>
-                 <div class="company-grid-column-3 scroll-reveal-opac  grey-border padding-vert-24 padding-horz-48">
+                 <div class="company-grid-column-3   company-grid-card padding-vert-24 padding-horz-48">
 
                                         <span class="partner-firm-icon-wrapper"> <img src="assets/images/icons/apartment-light.svg" /> </span> 
 
                      <h4 class="primary-serif">VisMai Accounting Services</h4>
-                     <p class="mtop-36">For All Your Accounting, GST, Cash and Financial Management Requirements.</p>
+                     <p class="mtop-36 secondary-grey-font">For All Your Accounting, GST, Cash and Financial Management Requirements.</p>
 
-                     <a href="" class=""><button class="mtop-36 partner-services-button primary-shade-2-bg light-primary-font padding-vert-12"> Know More </button></a>
+                     <a href="vismai.html" class=""><button class="mtop-36 partner-services-button primary-shade-2-bg light-primary-font padding-vert-12"> Know More </button></a>
 
                  </div>
 
 
-                 <div class="company-grid-column-4 scroll-reveal-opac  partner-box-3 grey-border  padding-horz-48 padding-vert-24">
+                 <div class="company-grid-column-4  company-grid-card partner-box-3 padding-horz-48 padding-vert-24">
 
                        <div>
-                                         <p>For Advisory  & Client Relationship </p>
+                                         <p class="">For Advisory  & Client Relationship </p>
 
                                          <h4 class="mtop-36 primary-serif"> SK Consultants</h4>
                        </div>
@@ -1315,6 +1376,10 @@
                  </div>
 
                   </div>
+
+             </div>
+
+             </aside>
 
              
            </div>
@@ -1367,14 +1432,17 @@
      <section class="highlights-grid-section">
           <div class="section-container">
 
-               <main class="highlights-grid-wrapper">
+
+              <h1 class="primary-shade-2-font primary-serif"> Why Choose Us</h1>
+
+               <main class="highlights-grid-wrapper mtop-48">
 
                     <div class="highlights-grid-column-1">
 
                         <div >
 
 
-                         <h4 class="primary-shade-2-font"> Expertise</h4>
+                         <h4 class="primary-shade-2-font highlights-grid-title"> Expertise</h4>
 
                          <p class="mtop-48 highlights-grid-paragraph"> Our founders and Employees have Vast
                          Combined Experience in Managing 
@@ -1391,7 +1459,7 @@
                        <div >
 
 
-                         <h4 class="primary-shade-2-font"> Standard</h4>
+                         <h4 class="primary-shade-2-font highlights-grid-title"> Standard</h4>
 
                          <p class="mtop-48 highlights-grid-paragraph"> 
                          We maintain high standards of Work
@@ -1407,7 +1475,7 @@
                       <div >
 
 
-                         <h4 class="primary-shade-2-font"> Work Ethics</h4>
+                         <h4 class="primary-shade-2-font highlights-grid-title"> Work Ethics</h4>
 
                          <p class="mtop-48 highlights-grid-paragraph"> 
                          We follow stric rules when it comes to
@@ -1421,12 +1489,12 @@
                        </div>
 
                     </div>
-                     <div class="highlights-grid-column-4">
+                     <div class="highlights-grid-column-4 highlights-grid-title">
 
                       <div >
 
 
-                         <h4 class="primary-shade-2-font"> Record Keeping</h4>
+                         <h4 class="primary-shade-2-font highlights-grid-title"> Record Keeping</h4>
 
                          <p class="mtop-48 highlights-grid-paragraph"> For Every Transactions, We keep
                          records in accordance with the
@@ -1455,23 +1523,46 @@
 
 
                  </div>
-                 <h1>
+                 <h3 class="primary-shade-1-font">
 
                   
-                  Get Free Consulation. </h1>
+                  Get Free Consulation. </h3 >
 
                  <div class="final-cta-center-wrapper-btn-row mtop-48">
 
-                  <a href="" style="display: inline-block;"> <button class="final-cta-button light-primary-bg  accent-font padding-vert-12 "> 
+                  <a href="tel:+918489901189" style="display: inline-block;"> <button class="final-cta-button dark-primary-bg light-primary-font  "> 
                 
-                                              Talk to Our Expert
+                            <span class="">
+
+                              <img src="assets/images/icons/footerphoneicon.svg" /> 
+                            </span>     
+                            
+                            <span>
+
+                            
+                            Talk to Our Expert
+
+                            </span>
+
                
             
                         </button> </a>
 
-                        <a href="" style="display: inline-block;"> <button class="final-cta-button light-primary-bg  accent-font padding-vert-12 "> 
+                        <a href="https://calendly.com/shineprks7/free-consultation-covai-accountants" style="display: inline-block;"> <button class="final-cta-button dark-primary-bg light-primary-font"> 
                 
-                                                Book Appointment
+                           <span class="">
+
+                              <img src="assets/images/icons/event-icon-light.svg" /> 
+                            </span>     
+
+
+
+                            <span>
+
+                            
+                                                Book Discovery Call
+
+                            </span>
                
             
                         </button> </a>
@@ -1514,8 +1605,12 @@
                       <div class="company-info-title dark-primary-bg light-primary-font">A Collabaration of </div>
 
                       <p class="company-info "> SK Consultants</p>
-                      <p class="company-info mtop-24"> ASAP Associates</p>
-                      <p class="company-info mtop-24"> VisMai Accounting Services</p>
+                      <p class="company-info mtop-24"> 
+                       <a href="asap.html"> ASAP Associates </a>  
+                      
+                      </p>
+                      <p class="company-info mtop-24">
+                        <a href="vismai.html">  VisMai Accounting Services </a> </p>
 
 
 
@@ -1532,7 +1627,8 @@
                   
                     <li class="footer-menu-item" > <a href=""> Who We are </a></li>
 
-                   <li class="footer-menu-item" > <a href=""> Contact Us </a></li>
+                   <li class="footer-menu-item" > <a href=""> 
+                     </a></li>
 
                    </div>
                </div>
@@ -1572,18 +1668,21 @@
 </body>
 
 
-<script src="assets/js/d3.v7.min.js"> </script>
+<!-- <script src="assets/js/d3.v7.min.js"> </script>
 <script src="assets/js/flubber.min.js"> </script>
 
 
-<script src="assets/js/anime.js"> </script>
+<script src="assets/js/anime.js"> </script> -->
 
 <!-- <script src="assets/js/connector.js"> </script> -->
 
 
 <script src="assets/js/scrolling.js"> </script>
 
+
 <script src="assets/js/nav.js"> </script>
+
+<script src="assets/js/scroll-slider.js"> </script>
 
 <script src="assets/js/index.js"> </script>
 

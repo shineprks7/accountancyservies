@@ -14,10 +14,13 @@
     align-items: center;
     flex-wrap: wrap;
 
-    position: fixed;
+
+     position: absolute;
     top:0px;
     left:0px;
     z-index: 1000;
+
+   
 
     color:#fff;
 
@@ -201,6 +204,9 @@
 
     @media (max-width: 1080px) {
 
+
+      
+
       .site-logo-icon img
 {
  height: 48px;
@@ -209,6 +215,11 @@
 .nav-bar-wrapper
 {
 height: 96px;
+
+ position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 1000;
 }
        .destop-menu-wrapper
        {
