@@ -48,6 +48,23 @@
 
 }
 
+.section-business-services-image-caption.scroll-reveal-popup
+{
+
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+  transform: translate(-300%, 100%);
+
+
+}
+
+.section-business-services-image-caption.scroll-reveal-popup.reveal
+{
+
+    transform: translate(0%,0%);
+
+}
+
 .decoration-ball-business-services
 {
     width: 48px;

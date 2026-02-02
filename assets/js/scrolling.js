@@ -52,8 +52,13 @@ function handleScroll(event)
     
     const servicesHeadlinePartsTax = document.querySelectorAll(".services-section-tax-content .services-headline-part");
 
+    const servicesListHighlight = document.querySelectorAll(".services-grid-column");
+
+    const taxBenefitsItems = document.querySelectorAll(".tax-benefits-item");
+
 
         const scrollRevealByOpacity = document.querySelectorAll(".scroll-reveal-opac");
+        const scrollRevealByPopUp = document.querySelectorAll(".scroll-reveal-popup");
 
         const boxShadowScrollReveal = document.querySelectorAll(".scroll-reveal-box-shadow");
 
@@ -104,6 +109,7 @@ function handleScroll(event)
          }
 
      });
+     
       boxShadowScrollReveal.forEach((el) => {
 
 
@@ -283,6 +289,139 @@ function handleScroll(event)
 
 
      
+
+       servicesListHighlight.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight )
+         {
+
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent < 80 &&  pointToPercent > 45)
+            {
+                  el.classList.add("highlighted");
+
+
+                
+            }
+            else
+            {
+                el.classList.remove("highlighted");
+
+            }
+            
+            
+
+         }
+         else
+         {
+                            el.classList.remove("highlighted");
+
+         }
+         
+
+     });
+
+     
+
+      taxBenefitsItems.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight )
+         {
+
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent < 80 &&  pointToPercent > 45)
+            {
+                  el.classList.add("highlighted");
+
+
+                
+            }
+            else
+            {
+                el.classList.remove("highlighted");
+
+            }
+            
+            
+
+         }
+         else
+         {
+                            el.classList.remove("highlighted");
+
+         }
+         
+
+     });
+
+      scrollRevealByPopUp.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight )
+         {
+
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent < 80 &&  pointToPercent > 45)
+            {
+                  el.classList.add("reveal");
+
+
+                
+            }
+            else
+            {
+
+
+            }
+            
+            
+
+         }
+         else
+         {
+
+         }
+         
+
+     });
 
     //  aboutUsSectionScrollTriggers.forEach((el) => {
 

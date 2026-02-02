@@ -88,6 +88,70 @@
 
 }
 
+.tax-benefits-item
+{
+
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  padding: 8px;
+
+}
+.tax-benefits-item::after
+{
+
+  position: relative;
+  z-index: -1;
+   content:'';
+  border: 2px solid #fff;
+  border-bottom: 0px;
+  border-right: 0px;
+    border-left: 0px;
+
+  position: absolute;
+  left: 0px;
+  top:0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0px;
+
+  transform: translate(-110%,0);
+
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+}
+
+.services-section-image-card-benefits .tax-benefits-item::after
+
+{
+
+  border: 2px solid blue;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+
+.tax-benefits-item.highlighted::after
+{
+ 
+    transform: translate(0%,0);
+
+}
+
+.tax-benefits-item.highlighted ~ .tax-benefits-item.highlighted::after 
+{
+    transform: translate(-110%,0);
+
+}
+
+
+
+
+
 
 @media (max-width:720px)  { 
 
@@ -121,6 +185,21 @@
   margin-top: 2px;
 
 }
+
+.services-grid-column.highlighted
+{
+  color:#6A07FF;
+}
+
+.services-grid-column.highlighted  ~ .services-grid-column.highlighted 
+{
+  color:#000;
+} 
+
+
+
+
+
 
 }
 
