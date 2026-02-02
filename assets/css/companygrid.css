@@ -29,17 +29,21 @@
     grid-column: span 6;
     /* background-color: #1c139b; */
 
-     background-image: linear-gradient(to right, #4a07a1 1px, transparent 1px), linear-gradient(to bottom, #4a07a1 1px, transparent 1px);
-    background-size: 4px 4px;
+    background-color: #0C0840;
+
+     background-image: linear-gradient(to right, #0b0b0c  1px, transparent 1px), linear-gradient(to bottom, #0b0b0c  1px, transparent 1px);
+    background-size: 6px 6px;
 
 }
 
 .company-grid-column-3
 {
     grid-column: span 6;
+        background-color: #0C0840;
+
     /* background-color: #1c139b; */
-     background-image: linear-gradient(to right, #4a07a1 1px, transparent 1px), linear-gradient(to bottom, #4a07a1 1px, transparent 1px);
-    background-size: 4px 4px;
+     background-image: linear-gradient(to right, #0b0b0c  1px, transparent 1px), linear-gradient(to bottom, #0b0b0c  1px, transparent 1px);
+    background-size: 8px 8px;
 
 
 }
@@ -49,7 +53,7 @@
     grid-column: span 6;
         background-color: #0C0840;
         background-image: linear-gradient(to right, #0b0b0c 1px, transparent 1px), linear-gradient(to bottom, #0b0b0c 1px, transparent 1px);
-    background-size: 4px 4px;
+    background-size: 10px 10px;
 
 }
 
