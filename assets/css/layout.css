@@ -642,6 +642,19 @@ display: flex;
      background-size: 40px 40px;
 
      border-top: 2px solid #2217bf;
+
+     transition: all linear 20s ;
+}
+
+.services-section-accounting-tax-service-list.highlighted
+
+{
+     background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+     linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+
+     background-size: 80px 80px;
+
+
 }
 
 .services-section-list-wrapper

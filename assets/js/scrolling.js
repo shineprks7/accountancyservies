@@ -64,6 +64,10 @@ function handleScroll(event)
 
         const boxShadowScrollRevealAbout = document.querySelectorAll(".about-section .outset-box-shadow");
 
+        const ctaSectionAccountingTax = document.querySelectorAll(".services-section-accounting-tax-service-list");
+
+
+        
         
 
 
@@ -310,6 +314,52 @@ function handleScroll(event)
             console.log("pointToPercent"+pointToPercent);
 
             if(pointToPercent < 80 &&  pointToPercent > 45)
+            {
+                  el.classList.add("highlighted");
+
+
+                
+            }
+            else
+            {
+                el.classList.remove("highlighted");
+
+            }
+            
+            
+
+         }
+         else
+         {
+                            el.classList.remove("highlighted");
+
+         }
+         
+
+     });
+
+     
+
+     ctaSectionAccountingTax.forEach((el) => {
+
+
+        let elPosition = el.getBoundingClientRect();
+
+         let top = elPosition.top;
+
+         let currentPosition = viewPortHeight-top;
+
+           if(currentPosition > 0 && currentPosition < viewPortHeight )
+         {
+
+
+            let point = viewPortHeight/100;
+
+            let pointToPercent = Math.round((currentPosition  / point ) ,0);
+
+            console.log("pointToPercent"+pointToPercent);
+
+            if(pointToPercent < 100 &&  pointToPercent > 10)
             {
                   el.classList.add("highlighted");
 
