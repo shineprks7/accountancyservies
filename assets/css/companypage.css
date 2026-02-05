@@ -295,9 +295,11 @@ section
   justify-content: center;
 
   flex-direction: column;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
     position: relative;
+
+    overflow: hidden;
 
 }
 
@@ -338,16 +340,17 @@ section
 
    content: '';
    height: 100%;
-   width: 0%;
-   transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+   width: 100%;
+   transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
      background-color: #0C0840;
      position: absolute;
   top: 0px;
   left: 0px;
 
+ transform: translate(100%,0);
 
-
-  z-index: -1;
+  z-index: 1;
+  pointer-events: none;
 
 }
 
@@ -355,7 +358,7 @@ section
 
 .company-page-core-services-list-grid-column.active::after
 {
-  width: 100%;
+ transform: translate(-100%,0);
   
 
 
@@ -408,6 +411,8 @@ body.overflowhidden::after
 .company-page-core-services-list-grid-column
 {
 
+
+
 }
 
 .company-page-core-services-list-grid-column.active .company-services-list-item-card
@@ -440,7 +445,7 @@ body.overflowhidden::after
 
   font-size: 16px;
 
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   
      max-height: 0px;
@@ -550,6 +555,18 @@ body.overflowhidden::after
 
 }
 @media (max-width: 1080px) {
+
+  body.overflowhidden::before
+{
+ display: none;
+
+}
+
+body.overflowhidden::after
+{
+ display: none;
+
+}
     
 }
 
@@ -692,17 +709,7 @@ body.overflowhidden::after
 
 }
 
-body.overflowhidden::before
-{
- display: none;
 
-}
-
-body.overflowhidden::after
-{
- display: none;
-
-}
 
 
 }
