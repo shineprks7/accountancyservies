@@ -256,10 +256,90 @@ section
 
 }
 
+
+
+
+
+
 .booking-btn-contact-page img
 {
   width:24px;
   height: 24px;
+}
+
+
+.booking-btn-contact-page 
+{
+
+  background-color: none;
+
+  position: relative;
+  z-index: 1;
+
+}
+
+.booking-btn-contact-page::after
+{
+    content: '';
+    z-index: -2;
+    background-color: #000;
+
+    top:0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+         pointer-events: none;
+
+    transition: transform cubic-bezier(0.175, 0.885, 0.32, 1) 1s ;
+    transform: translate(0%, 0%);
+    transition-delay: 0s;
+
+  
+}
+
+.booking-btn-contact-page::before
+{
+    content: '';
+    z-index: -1;
+    background-color:blue;
+    border-top: 2px solid #fff;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translate(-101%, 0);
+
+
+    transition: transform cubic-bezier(0.175, 0.885, 0.32, 1) 1s ;
+
+    pointer-events: none;
+        
+    transition-delay: 0s;
+
+    
+}
+
+.booking-btn-contact-page:hover::before
+
+{
+
+    transform: translate(0%, 0%);
+
+
+
+}
+
+.booking-btn-contact-page:hover::after
+
+{
+
+    transform: translate(-101%, 0%);
+
+
+
 }
 
 @media (max-width:1260px)  { 
