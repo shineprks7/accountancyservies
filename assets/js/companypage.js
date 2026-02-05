@@ -57,6 +57,8 @@
 
             document.body.style.overflow = "scroll";
 
+            document.body.classList.remove('overflowhidden');
+
           
 
 
@@ -103,6 +105,7 @@
             currentparent.classList.remove('active');
 
             document.body.style.overflow = "scroll";
+            document.body.classList.remove('overflowhidden');
 
           }
           else
@@ -117,6 +120,7 @@
             document.body.style.overflow = "hidden";
 
              currentparent.classList.add('active');
+            document.body.classList.add('overflowhidden');
 
             //  setTimeout( ()=> 
             //  {
@@ -180,6 +184,7 @@
             currentparent.classList.remove('active');
 
             document.body.style.overflow = "scroll";
+            document.body.classList.remove('overflowhidden');
 
           
 

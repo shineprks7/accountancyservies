@@ -1165,6 +1165,8 @@ background-color: #2217bf;
     
 
     min-height: 400px;
+    position: relative;
+    z-index: 2;
     
 
 }
