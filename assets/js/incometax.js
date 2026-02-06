@@ -2837,7 +2837,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     totaldeductions: function totaldeductions() {
       var salaryincome14percent = Math.round(this.dataToNumber(this.inputdata.salaryinformation.grossSalary) / 100 * 14);
-      var us80c = Math.min(this.dataToNumber(this.inputdata.populardeductions.us80c, 100000), 150000);
+      var us80c = Math.min(this.dataToNumber(this.inputdata.populardeductions.us80c), 150000);
       var us80d = this.dataToNumber(this.inputdata.populardeductions.us80d);
 
       // let us80ccd2 =  this.dataToNumber(this.inputdata.populardeductions.us80ccd2);
@@ -2846,7 +2846,7 @@ __webpack_require__.r(__webpack_exports__);
 
       // let us80ccd =  this.dataToNumber(this.inputdata.populardeductions.us80ccd);
 
-      var us80ccd = Math.min(this.dataToNumber(this.inputdata.populardeductions.us80ccd2), 50000);
+      var us80ccd = Math.min(this.dataToNumber(this.inputdata.populardeductions.us80ccd), 50000);
       var us80eea = this.dataToNumber(this.inputdata.populardeductions.us80eea);
       var us80tta = this.dataToNumber(this.inputdata.populardeductions.us80tta);
       var us80g = this.dataToNumber(this.inputdata.populardeductions.us80g);
@@ -23042,13 +23042,13 @@ var render = function () {
                   {
                     name: "model",
                     rawName: "v-model",
-                    value: _vm.localinputdata.populardeductions.us80C,
-                    expression: "localinputdata.populardeductions.us80C",
+                    value: _vm.localinputdata.populardeductions.us80c,
+                    expression: "localinputdata.populardeductions.us80c",
                   },
                 ],
                 staticClass: "text-field",
                 attrs: { type: "text", inputmode: "numeric" },
-                domProps: { value: _vm.localinputdata.populardeductions.us80C },
+                domProps: { value: _vm.localinputdata.populardeductions.us80c },
                 on: {
                   input: function ($event) {
                     if ($event.target.composing) {
@@ -23056,7 +23056,7 @@ var render = function () {
                     }
                     _vm.$set(
                       _vm.localinputdata.populardeductions,
-                      "us80C",
+                      "us80c",
                       $event.target.value
                     )
                   },
