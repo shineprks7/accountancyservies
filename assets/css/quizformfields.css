@@ -678,7 +678,11 @@ taxform-text-field-wrapper .text-field::hover
  list-style-type: circle;
 
 }
-
+.quiz-verdict-excellent
+{
+  color:#06af3e;
+  
+}
 .quiz-verdict-positive
 {
   color: #757575;
@@ -700,7 +704,10 @@ taxform-text-field-wrapper .text-field::hover
 
 }
 
-
+.quiz-imporovement-list-item-title
+{
+  font-weight: bold;
+}
 
 
 

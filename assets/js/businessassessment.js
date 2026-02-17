@@ -3056,10 +3056,24 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
       if (data == 'next') {
         if (this.activeSubStage < substagelengthlimit) {
           this.activeSubStage++;
+          setTimeout(function () {
+            var formtoppart = document.querySelector('.taxform-progress-wrapper');
+            formtoppart.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 100);
         }
       } else if (data == 'pre') {
         if (this.activeSubStage > 1) {
           this.activeSubStage--;
+          setTimeout(function () {
+            var formtoppart = document.querySelector('.taxform-progress-wrapper');
+            formtoppart.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }, 100);
         }
       }
     },
@@ -3308,6 +3322,13 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
         'rating': rating
       };
       return result;
+    },
+    improvementRequired: function improvementRequired() {
+      if (this.quiz1Verdict.rating < 4 || this.quiz2Verdict.rating < 4 || this.quiz3Verdict.rating < 4 || this.quiz4Verdict.rating < 4) {
+        return true;
+      } else {
+        return false;
+      }
     }
   }
 });
@@ -21671,7 +21692,7 @@ var render = function () {
                       expression: "overallVerdict.rating == 5",
                     },
                   ],
-                  staticClass: "quiz-verdict-positive",
+                  staticClass: "quiz-verdict-excellent",
                 },
                 [
                   _vm._v(
@@ -21751,7 +21772,7 @@ var render = function () {
                       expression: "overallVerdict.rating == 1",
                     },
                   ],
-                  staticClass: "quiz-verdict-positive",
+                  staticClass: "quiz-verdict-warning",
                 },
                 [
                   _vm._v(
@@ -21761,7 +21782,7 @@ var render = function () {
               ),
             ]),
             _vm._v(" "),
-            _vm.activeStage == 5
+            _vm.activeStage == 5 && _vm.improvementRequired == true
               ? _c(
                   "div",
                   { staticClass: "quiz-imporovement-wrapper mtop-48" },
@@ -21795,8 +21816,20 @@ var render = function () {
                                 [
                                   _vm.quizItemVerdict(quizitem).status != false
                                     ? _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "quiz-imporovement-list-item-title",
+                                          },
+                                          [
+                                            _vm._v(
+                                              _vm._s(quizitem.title) + " :"
+                                            ),
+                                          ]
+                                        ),
                                         _vm._v(
-                                          "\n\n                                  " +
+                                          "  " +
                                             _vm._s(
                                               _vm.quizItemVerdictResult(
                                                 quizitem
@@ -21839,8 +21872,16 @@ var render = function () {
                                 [
                                   _vm.quizItemVerdict(quizitem).status != false
                                     ? _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "quiz-imporovement-list-item-title",
+                                          },
+                                          [_vm._v(_vm._s(quizitem.title) + ":")]
+                                        ),
                                         _vm._v(
-                                          "\n\n                                  " +
+                                          "    " +
                                             _vm._s(
                                               _vm.quizItemVerdictResult(
                                                 quizitem
@@ -21881,10 +21922,24 @@ var render = function () {
                                   staticClass: "quiz-imporovement-list-item",
                                 },
                                 [
-                                  _vm.quizItemVerdict(quizitem).status != false
+                                  _vm.quizItemVerdict(quizitem).status !=
+                                    false &&
+                                  _vm.quizItemVerdict(quizitem).rating < 4
                                     ? _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "quiz-imporovement-list-item-title",
+                                          },
+                                          [
+                                            _vm._v(
+                                              _vm._s(quizitem.title) + " :"
+                                            ),
+                                          ]
+                                        ),
                                         _vm._v(
-                                          "\n\n                                  " +
+                                          "   " +
                                             _vm._s(
                                               _vm.quizItemVerdictResult(
                                                 quizitem
@@ -21927,8 +21982,16 @@ var render = function () {
                                 [
                                   _vm.quizItemVerdict(quizitem).status != false
                                     ? _c("div", [
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "quiz-imporovement-list-item-title",
+                                          },
+                                          [_vm._v(_vm._s(quizitem.title) + ":")]
+                                        ),
                                         _vm._v(
-                                          "\n\n                                  " +
+                                          " " +
                                             _vm._s(
                                               _vm.quizItemVerdictResult(
                                                 quizitem
