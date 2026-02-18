@@ -21810,6 +21810,19 @@ var render = function () {
                               return _c(
                                 "li",
                                 {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value:
+                                        _vm.quizItemVerdict(quizitem).status !=
+                                          false &&
+                                        _vm.quizItemVerdict(quizitem).rating <
+                                          4,
+                                      expression:
+                                        "quizItemVerdict(quizitem).status != false && quizItemVerdict(quizitem).rating < 4 ",
+                                    },
+                                  ],
                                   key: quizitem.quizid,
                                   staticClass: "quiz-imporovement-list-item",
                                 },
@@ -21866,6 +21879,19 @@ var render = function () {
                               return _c(
                                 "li",
                                 {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value:
+                                        _vm.quizItemVerdict(quizitem).status !=
+                                          false &&
+                                        _vm.quizItemVerdict(quizitem).rating <
+                                          4,
+                                      expression:
+                                        "quizItemVerdict(quizitem).status != false && quizItemVerdict(quizitem).rating < 4 ",
+                                    },
+                                  ],
                                   key: quizitem.quizid,
                                   staticClass: "quiz-imporovement-list-item",
                                 },
@@ -21918,13 +21944,24 @@ var render = function () {
                               return _c(
                                 "li",
                                 {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value:
+                                        _vm.quizItemVerdict(quizitem).status !=
+                                          false &&
+                                        _vm.quizItemVerdict(quizitem).rating <
+                                          4,
+                                      expression:
+                                        "quizItemVerdict(quizitem).status != false && quizItemVerdict(quizitem).rating < 4 ",
+                                    },
+                                  ],
                                   key: quizitem.quizid,
                                   staticClass: "quiz-imporovement-list-item",
                                 },
                                 [
-                                  _vm.quizItemVerdict(quizitem).status !=
-                                    false &&
-                                  _vm.quizItemVerdict(quizitem).rating < 4
+                                  _vm.quizItemVerdict(quizitem).status != false
                                     ? _c("div", [
                                         _c(
                                           "span",
@@ -21976,6 +22013,19 @@ var render = function () {
                               return _c(
                                 "li",
                                 {
+                                  directives: [
+                                    {
+                                      name: "show",
+                                      rawName: "v-show",
+                                      value:
+                                        _vm.quizItemVerdict(quizitem).status !=
+                                          false &&
+                                        _vm.quizItemVerdict(quizitem).rating <
+                                          4,
+                                      expression:
+                                        "quizItemVerdict(quizitem).status != false && quizItemVerdict(quizitem).rating < 4 ",
+                                    },
+                                  ],
                                   key: quizitem.quizid,
                                   staticClass: "quiz-imporovement-list-item",
                                 },
