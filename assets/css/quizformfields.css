@@ -64,9 +64,18 @@
   width: 100%;
 
   display: block;
-  height: 40px;
-  
+height: 64px;  
 }
+.taxform-field-label-info
+{
+      color: #757575;
+
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  margin-top: 8px;
+}
+
 .taxform-field-label-quiz
 {
 font-size: 24px;
@@ -313,6 +322,17 @@ taxform-text-field-wrapper .text-field::hover
 
        border-top-left-radius: 12px;
        border-bottom-left-radius: 12px;
+
+}
+
+.taxform-grid-progress-part-1.cac-calculator
+{
+   grid-column: span 5;
+
+}
+.taxform-grid-progress-part-5.cac-calculator
+{
+   grid-column: span 5;
 
 }
 .taxform-grid-progress-part-1::after
@@ -714,6 +734,8 @@ taxform-text-field-wrapper .text-field::hover
 
 
 
+
+
 @keyframes slideFromLeft {
   0%{
     transform: translate(100%,0%);
@@ -735,6 +757,20 @@ taxform-text-field-wrapper .text-field::hover
 
 
 }
+
+.taxtool-information-section p
+{
+  font-size: 18px;
+  line-height: 24px;
+}
+.article-list-item
+{
+
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
   .taxform-grid-wrapper .taxform-grid-item
 
 
